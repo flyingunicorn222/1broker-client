@@ -38,9 +38,6 @@ which is a means i'll receive a small amount of BTC from [1broker](https://1brok
  - [1broker](https://1broker.com/m/r.php?i=11468) links on this documentation
 also constains my refferal link
 
- - If you would like to support the development of this library and other
- freebies, pleae make a donation to this [BTC address](https://blockchain.info/address/1767DuD8teMeeTV2DtPviqMYE1G13169x3)
-
- ![Donate](https://blockchain.info/qr?data=1767DuD8teMeeTV2DtPviqMYE1G13169x3&size=200)
+ [Donate to support this library and more freebies](https://blockchain.info/address/1767DuD8teMeeTV2DtPviqMYE1G13169x3)
 
 Thank You!
