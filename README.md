@@ -9,7 +9,7 @@ installing
 
 ````npm install --save 1broker-client````
 
-Unfortunately this new versions of this package might be break backwards
+Unfortunately new versions of this package might be break backwards
 compatibility so please make sure you specify a version on your package.json
 file.
 
@@ -21,14 +21,13 @@ OneBroker = require( "1broker-client" )
 client = OneBroker( YOU_API_KEY )
 
 client.account_overview( ( error, overview ) {
-  if( error )
-    return console.error error;
+  if( error ) return console.error error;
 
   console.log( overview );
 } );
 ````
 
-For full documentation please refer to the [Official API](https://1broker.com/?c=api_documentation)
+For full [API documentation](https://1broker.com/?c=api_documentation) please refer to the [Official API](https://1broker.com/?c=api_documentation)
 
 
 Disclaimer
@@ -42,6 +41,6 @@ also constains my refferal link
  - If you would like to support the development of this library and other
  freebies, pleae make a donation to this [BTC address](https://blockchain.info/address/1767DuD8teMeeTV2DtPviqMYE1G13169x3)
 
- ![Donate](https://blockchain.info/qr?data=1767DuD8teMeeTV2DtPviqMYE1G13169x3&size=200 "Donate")
+ ![Donate](https://blockchain.info/qr?data=1767DuD8teMeeTV2DtPviqMYE1G13169x3&size=200)
 
 Thank You!
