@@ -2,10 +2,6 @@ request = require 'request'
 
 module.exports = ( config, method, params, callback ) ->
 
-  # console.log 'got config ->', config
-  # console.log 'method ->', method
-  # console.log 'params ->', params
-
   # if only 3 arguments are sent assume the last one is the callback
   if params and not callback?
     callback = params
@@ -13,17 +9,26 @@ module.exports = ( config, method, params, callback ) ->
 
   url = "#{config.url}/#{method}.php?token=#{config.api_key}"
 
-  if config.referral_id?
+  if config.referral_id? and not params?.referral_id
     url += "&referral_id=#{config.referral_id}"
+
+  if params?.referral_id?
+    url += "&referral_id=#{params.referral_id}"
+
+    # delete since we already used and we don't want the parameter
+    # to be repeated once we build the parameters string
+    delete params.referral_id
 
   if config.pretty
     url += "&pretty=1"
 
-  if params? then url += params
+  if params? 
+    for key, value of params
+      console.log "#{key}=#{value}"
 
-  console.log "calling url ->", url
+      url += "&#{key}=#{value}"
 
-  request url: url, ( error, response, body ) ->
+  request { url: url, strictSSL: on }, ( error, response, body ) ->
 
     if error
       return callback?( error )
