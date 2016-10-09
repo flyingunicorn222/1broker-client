@@ -67,6 +67,13 @@ client.position_list_open( params, callback )
 
 For full [API documentation](https://1broker.com/?c=api_documentation) please refer to the [Official API](https://1broker.com/?c=api_documentation)
 
+TODO
+====
+
+- [x] Simple implementation
+- [ ] Proper tests
+- [ ] Parameters validation
+- [ ] Documentation
 
 Contributing
 ====
