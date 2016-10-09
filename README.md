@@ -68,10 +68,13 @@ For full [API documentation](https://1broker.com/?c=api_documentation) please re
 
 Contributing
 ====
-Please just make a pull request or open an issue, any comment or recommendation
-will be highly appreciated.
+The source code is also pretty simple and self explainatory so feel free
+to edit and submit a pull request.
 
-You can also support [Donate to support this library and more freebies](https://blockchain.info/address/1767DuD8teMeeTV2DtPviqMYE1G13169x3)
+In case you find an issue, have a request or recommendation feel free to open
+an issue, it will be highly appreciated.
+
+You can also [donate to support this library and more freebies!](https://blockchain.info/address/1767DuD8teMeeTV2DtPviqMYE1G13169x3)
 
 Thank You!
 
