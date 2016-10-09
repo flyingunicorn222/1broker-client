@@ -1,8 +1,8 @@
 {
   "author": "flyingunicorn222 (github.com/flyingunicorn222)",
   "name": "1broker-client",
-  "description": "Client for 1broker api",
-  "version": "0.1.0",
+  "description": "node.js client for 1broker.com api",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/flyingunicorn222/1broker-api.git"
@@ -25,9 +25,19 @@
     "nodemon": "*"
   },
   "keywords": [
-    "1broker",
     "api",
     "trading",
-    "forex"
+    "1broker",
+    "Forex",
+    "bitcoin",
+    "btc",
+    "CFD",
+    "Commodities",
+    "Gold",
+    "Silver",
+    "Indices",
+    "Stocks",
+    "Commodities",
+    "Crypto"
   ]
 }
