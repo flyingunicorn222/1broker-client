@@ -4,6 +4,8 @@
 A very simple [1broker](https://1broker.com/m/r.php?i=11468) api client, in case 
 you have any suggestions or problems get in touch through github issues.
 
+[1broker](https://1broker.com/m/r.php?i=11468) will let
+
 installing
 ====
 
@@ -21,10 +23,10 @@ All functions take "callback" as last parameter:
 ````javascript
 OneBroker = require( "1broker-client" )
 
-client = OneBroker( YOU_API_KEY )
+client = OneBroker( "YOU_API_KEY" )
 
-client.account_overview( ( error, overview ) {
-  if( error ) return console.error error;
+client.account_overview( function( error, overview ) {
+  if( error ) return console.error( error );
 
   console.log( overview );
 } );

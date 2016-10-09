@@ -2,14 +2,15 @@
   "author": "flyingunicorn222 (github.com/flyingunicorn222)",
   "name": "1broker-client",
   "description": "node.js client for 1broker.com api",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/flyingunicorn222/1broker-api.git"
   },
   "main": "lib/client.js",
   "scripts": {
-    "prepublish": "make build"
+    "prepublish": "make build",
+    "postinstall": "coffee --bare -o lib/ -c src/"
   },
   "engines": {
     "node": ">= 0.8.0"
