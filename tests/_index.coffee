@@ -31,7 +31,7 @@ callback = ( error, response ) ->
 
 # client.order_create params, callback
 
-# client.order_list_open callback
+client.order_list_open callback
 
 # client.position_list_history callback
 
@@ -45,4 +45,4 @@ callback = ( error, response ) ->
 
 # client.market_detail { symbol: "BTCUSD" }, callback
 
-client.market_quotes { symbols: "BTCUSD,GOLD" }, callback
+# client.market_quotes { symbols: "BTCUSD,GOLD" }, callback
