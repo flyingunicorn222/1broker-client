@@ -41,7 +41,6 @@ also constains my refferal link
  - If you would like to support the development of this library and other
  freebies, pleae make a donation to this [BTC address](https://blockchain.info/address/1767DuD8teMeeTV2DtPviqMYE1G13169x3)
 
- ![Donate]
- (https://blockchain.info/qr?data=1767DuD8teMeeTV2DtPviqMYE1G13169x3&size=200)
+ ![Donate](https://blockchain.info/qr?data=1767DuD8teMeeTV2DtPviqMYE1G13169x3&size=200)
 
 Thank You!
