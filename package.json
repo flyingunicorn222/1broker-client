@@ -1,0 +1,33 @@
+{
+  "author": "flyingunicorn222 (github.com/flyingunicorn222)",
+  "name": "1broker-client",
+  "description": "Client for 1broker api",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flyingunicorn222/1broker-api.git"
+  },
+  "main": "lib/client.js",
+  "scripts": {
+    "prepublish": "make build"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "glob": "^7.1.1",
+    "lodash": "*",
+    "request": "^2.75.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "docco": "^0.7.0",
+    "nodemon": "*"
+  },
+  "keywords": [
+    "1broker",
+    "api",
+    "trading",
+    "forex"
+  ]
+}
