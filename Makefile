@@ -19,4 +19,4 @@ publish:
 	npm publish
 
 test:
-	./node_modules/.bin/nodemon --watch src -e coffee --exec "coffee ./tests/account_overview.coffee"
+	./node_modules/.bin/nodemon --watch src -e coffee --exec "coffee ./tests/_index.coffee"
