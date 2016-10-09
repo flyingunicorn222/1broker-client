@@ -73,7 +73,7 @@ TODO
 - [x] Simple implementation
 - [ ] Proper tests
 - [ ] Parameters validation
-- [ ] Documentation
+- [ ] Please create an issue if you think something else is needed
 
 Contributing
 ====
