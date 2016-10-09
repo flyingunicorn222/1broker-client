@@ -73,15 +73,15 @@ TODO
 - [x] Simple implementation
 - [ ] Proper tests
 - [ ] Parameters validation
-- [ ] Please create an issue if you think something else is needed
+- [ ] Please [create an issue](https://github.com/flyingunicorn222/1broker-client/issues/new) if you think something else is needed
 
 Contributing
 ====
 The source code is also pretty simple and self explainatory so feel free
 to edit and submit a pull request.
 
-In case you find an issue, have a request or recommendation feel free to open
-an issue, it will be highly appreciated.
+In case you find an issue, have a request or recommendation feel free to [open
+an issue](https://github.com/flyingunicorn222/1broker-client/issues/new), it will be highly appreciated.
 
 You can also [donate to support this library and more freebies!](https://blockchain.info/address/1767DuD8teMeeTV2DtPviqMYE1G13169x3)
 
