@@ -11,7 +11,7 @@ installing
 
 ````npm install --save 1broker-client````
 
-Unfortunately new versions of this package might be break backwards
+Unfortunately new versions might break backwards
 compatibility so please make sure you specify a version on your package.json
 file.
 
@@ -73,6 +73,7 @@ TODO
 - [x] Simple implementation
 - [ ] Proper tests
 - [ ] Parameters validation
+- [ ] Extra methods ( long, short, reverse, [...] )
 - [ ] Please [create an issue](https://github.com/flyingunicorn222/1broker-client/issues/new) if you think something else is needed
 
 Contributing
