@@ -71,8 +71,9 @@ TODO
 ====
 
 - [x] Simple implementation
-- [ ] Proper tests
+- [ ] Tests
 - [ ] Parameters validation
+- [ ] Examples
 - [ ] Extra methods ( long, short, reverse, [...] )
 - [ ] Please [create an issue](https://github.com/flyingunicorn222/1broker-client/issues/new) if you think something else is needed
 
