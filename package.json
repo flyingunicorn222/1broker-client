@@ -9,8 +9,7 @@
   },
   "main": "lib/client.js",
   "scripts": {
-    "prepublish": "make build",
-    "postinstall": "coffee --bare -o lib/ -c src/"
+    "prepublish": "make build"
   },
   "engines": {
     "node": ">= 0.8.0"
