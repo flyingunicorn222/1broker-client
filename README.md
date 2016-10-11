@@ -72,7 +72,7 @@ TODO
 - [ ] Tests
 - [ ] Parameters validation
 - [ ] Examples
-- [ ] Extra methods ( long, short, reverse, [...] )
+- [ ] Extra methods ( long, short, close, reverse, [...] )
 - [ ] Please [create an issue](https://github.com/flyingunicorn222/1broker-client/issues/new) if you think something else is needed
 
 Contributing
