@@ -1,4 +1,4 @@
-call = require './call'
+call = require '../call'
 
 module.exports = ( config, params, callback ) ->
 
