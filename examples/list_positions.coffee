@@ -18,5 +18,5 @@ callback = ( error, response ) ->
 
   console.log response
 
-client.position_list_open( callback )
+client.position.list_open( callback )
 

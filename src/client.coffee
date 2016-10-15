@@ -12,7 +12,7 @@ module.exports = ( api_key, referral_id ) ->
 
   # for each API method we will create a function that receives
   # the config as first parameter, this way we don't have to
-  #
+  # worry about sending API_KEY and other options on each call
   api = ( file ) ->
     _.partial( require( "./api/#{file}"), config )
 
@@ -34,5 +34,16 @@ module.exports = ( api_key, referral_id ) ->
       edit                   : api 'position/edit'
       list_history           : api 'position/list_history'
       list_open              : api 'position/list_open'
+
+  # for each helper method we will create a function that receives
+  # the client as first parameter, same we did with the API methods
+  # but this time sending the whole client as first parameter
+  helper = ( file ) ->
+    _.partial( require( "./helpers/#{file}"), client )
+
+  # mapping helper functions
+  client.long  = helper 'long'
+  client.short = helper 'short'
+  client.close = helper 'close'
 
   return client

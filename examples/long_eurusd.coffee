@@ -19,9 +19,11 @@ callback = ( error, response ) ->
   console.log response
 
 params =
-  position_id : 919085
-  market_close: true
+  symbol    : 'EURUSD'
+  margin    : 0.01
+  direction : 'short'
+  leverage  : 1
+  order_type: 'Market'
 
-client.position_edit( params, callback )
-
+client.order_create( params, callback )
 

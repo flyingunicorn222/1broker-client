@@ -1,11 +1,10 @@
-
 OneBroker = require "../src/client"
-api_key   = require "./api_key"
+api_key   = require "./_key"
 
 if not api_key
 
   console.log "Can't test without API_KEY !"
-  console.log "Please update tests/api_key.coffee"
+  console.log "Please update examples/_key.coffee with your key"
   return
 
 client = OneBroker( api_key )
@@ -20,11 +19,9 @@ callback = ( error, response ) ->
   console.log response
 
 params =
-  symbol    : 'EURUSD'
-  margin    : 0.01
-  direction : 'short'
-  leverage  : 1
-  order_type: 'Market'
+  position_id : 919085
+  market_close: true
 
-client.order_create( params, callback )
+client.position_edit( params, callback )
+
 
