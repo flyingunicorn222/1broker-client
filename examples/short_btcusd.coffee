@@ -1,5 +1,5 @@
 OneBroker = require "../src/client"
-api_key   = require "./api_key"
+api_key   = require "./_key"
 
 if not api_key
 
@@ -19,11 +19,11 @@ callback = ( error, response ) ->
   console.log response
 
 params =
-  symbol    : 'EURUSD'
+  symbol    : 'BTCUSD'
   margin    : 0.01
-  direction : 'long'
+  direction : 'short'
   leverage  : 1
   order_type: 'Market'
 
-client.order_create( params, callback )
+client.order.create( params, callback )
 
