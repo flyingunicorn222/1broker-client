@@ -1,5 +1,5 @@
 call = require './call'
 
-module.exports = ( config, callback ) ->
+module.exports = ( config, params, callback ) ->
 
-  call config, 'position/list_history', callback
+  call config, 'position/list_history', params, callback
