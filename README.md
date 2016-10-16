@@ -68,7 +68,33 @@ examples
 ====
 
 Simple examples are provided on the [/examples](https://github.com/flyingunicorn222/1broker-client/tree/v1/examples) folder, including
-the % Stop Loss and Take Profit syntax
+the % Stop Loss and Take Profit syntax.
+
+Before running the examples you will need:
+
+ - Have an [1broker Account](https://1broker.com/m/r.php?i=11468)
+
+ - Go to [Settings](https://1broker.com/?u1=account_settings)
+
+ - Click "Create Api Token"
+
+ - Install [coffee-script](http://coffeescript.org/) ````npm install coffee-script --global```
+
+ - Download the example files
+
+````bash
+$ git clone https://github.com/flyingunicorn222/1broker-client.git
+$ cd 1broker-client/
+$ npm install
+$ cd examples
+```
+
+ - Edit [_key file](https://github.com/flyingunicorn222/1broker-client/blob/v1/examples/_key.coffee) and add your key between the quotes
+
+Now you can run the examples simply by:
+```bash
+$coffee long_eurusd.coffee
+```
 
 I'm also developing extra functions, called ["helpers"](https://github.com/flyingunicorn222/1broker-client/tree/v1/src/helpers) which will
 hopefully simplify the implementation of mechanical tasks.
