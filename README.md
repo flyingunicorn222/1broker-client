@@ -12,7 +12,7 @@ Unfortunately new versions might break backwards
 compatibility so please make sure you specify a version on your package.json
 file.
 
-Basics:
+basics
 ====
 
 All functions take "callback" as last parameter:
@@ -64,7 +64,7 @@ client.position.list_open( params, callback )
 
 For full [API documentation](https://1broker.com/?c=api_documentation) please refer to the [Official API](https://1broker.com/?c=api_documentation)
 
-EXAMPLES
+examples
 ====
 
 Simple examples are provided on the [/examples](https://github.com/flyingunicorn222/1broker-client/tree/v1/examples) folder, including
@@ -73,7 +73,7 @@ the % Stop Loss and Take Profit syntax
 I'm also developing extra functions, called ["helpers"](https://github.com/flyingunicorn222/1broker-client/tree/v1/src/helpers) which will
 hopefully simplify the implementation of mechanical tasks.
 
-TODO
+todo
 ====
 
 - [x] Simple implementation
@@ -84,7 +84,7 @@ TODO
 - [ ] Parameters validation
 - [ ] Please [create an issue](https://github.com/flyingunicorn222/1broker-client/issues/new) if you need something else
 
-Contributing
+contributing
 ====
 The source code is also pretty simple and self explainatory so feel free
 to edit and submit a pull request.
@@ -98,7 +98,7 @@ Feel free to send me a message on reddit, I'm [flyingunicorn222](https://www.red
 
 Thank You!
 
-Disclaimer
+disclaimer
 ====
  - By default when creating an order this library will use my referral_id,
 which means I'll receive a small amount of BTC from [1broker](https://1broker.com/m/r.php?i=11468)
