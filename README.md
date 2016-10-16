@@ -101,7 +101,8 @@ Thank You!
 Disclaimer
 ====
  - By default when creating an order this library will use my referral_id,
-which is a means i'll receive a small amount of BTC from [1broker](https://1broker.com/m/r.php?i=11468)! It would be great if you could keep it this way!
+which means I'll receive a small amount of BTC from [1broker](https://1broker.com/m/r.php?i=11468)
+when you create an order using this library! It would be great if you could keep it this way!
 
  - [1broker](https://1broker.com/m/r.php?i=11468) links on this documentation
 also constains my referral link
