@@ -80,7 +80,7 @@ Before running the examples you will need:
 
  - Download the example files
 
-````bash
+```bash
 $ git clone https://github.com/flyingunicorn222/1broker-client.git
 $ cd 1broker-client/
 $ npm install
@@ -99,7 +99,7 @@ Now you can run examples, for instance:
 $coffee long_eurusd.coffee
 ```
 or
-````bash
+```bash
 $coffee short_btcusd.coffee
 ```
 Examples source code is pretty simple, please [go ahead](https://github.com/flyingunicorn222/1broker-client/blob/v1/examples/) an explore!
