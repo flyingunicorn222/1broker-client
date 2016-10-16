@@ -22,7 +22,7 @@ params =
   symbol      : 'EURUSD'
   margin      : 0.01
   direction   : 'long'
-  leverage    : 1
+  leverage    : 20
   order_type  : 'Limit'
   # when doing Limit orders, that's how you specify the entry_price
   order_type_parameter : '1.0'
