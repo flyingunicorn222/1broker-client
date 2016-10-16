@@ -18,8 +18,51 @@ module.exports = ( config, params, callback ) ->
 
   if params.order_type is 'Limit'
 
-    console.log 'limit orders are easier'
-    console.log 'because we know the entry price first'
+    if params.direction is 'short'
+
+      if take_profit.indexOf( "%" ) isnt -1
+        take_profit = Number( take_profit.replace( "%", "" ) )
+
+        take_profit = 1 - ( take_profit / 100 / params.leverage )
+
+        take_profit = Number( params.order_type_parameter ) * take_profit
+
+        params.take_profit = take_profit
+
+      if stop_loss.indexOf( "%" ) isnt -1
+
+        stop_loss = Number( stop_loss.replace( "%", "" ) )
+
+        stop_loss = 1 + ( stop_loss / 100 / params.leverage )
+
+        stop_loss = Number( params.order_type_parameter ) * stop_loss
+        stop_loss = Number( stop_loss.toFixed(6) )
+
+        params.stop_loss = stop_loss
+
+    if params.direction is 'long'
+
+      if take_profit.indexOf( "%" ) isnt -1
+        take_profit = Number( take_profit.replace( "%", "" ) )
+
+        take_profit =  1 + ( take_profit / 100 / params.leverage )
+
+        take_profit = Number( params.order_type_parameter ) * take_profit
+        take_profit = Number( take_profit.toFixed(6) )
+
+        params.take_profit = take_profit
+
+      if stop_loss.indexOf( "%" ) isnt -1
+        stop_loss = Number( stop_loss.replace( "%", "" ) )
+
+        stop_loss = 1 - ( stop_loss / 100 / params.leverage )
+
+        stop_loss = Number( params.order_type_parameter ) * stop_loss
+        stop_loss = Number( stop_loss.toFixed(6) )
+
+        params.stop_loss = stop_loss
+
+    call config, 'order/create', params, callback
 
   if params.order_type is 'Market'
 
