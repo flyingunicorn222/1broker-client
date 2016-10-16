@@ -74,7 +74,7 @@ EXAMPLES
 Simple examples are provided on the [/examples](/examples) folder, including
 the % Stop Loss and Take Profit syntax
 
-I'm also developing extra functions, called ["helpers"](/helpers) which will
+I'm also developing extra functions, called ["helpers"](/src/helpers) which will
 hopefully simplify the implementation of mechanical tasks.
 
 TODO
@@ -83,6 +83,7 @@ TODO
 - [x] Simple implementation
 - [x] Examples
 - [ ] Extra methods ( long, short, close, reverse, [...] )
+- [ ] Documentation
 - [ ] Tests
 - [ ] Parameters validation
 - [ ] Please [create an issue](https://github.com/flyingunicorn222/1broker-client/issues/new) if you need something else
