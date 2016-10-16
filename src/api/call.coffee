@@ -22,7 +22,7 @@ module.exports = ( config, method, params, callback ) ->
   if config.pretty
     url += "&pretty=1"
 
-  if params? 
+  if params?
     for key, value of params
       console.log "#{key}=#{value}"
 
@@ -50,4 +50,4 @@ module.exports = ( config, method, params, callback ) ->
       console.log "Got Warning from API, dumping full response"
       console.log body
 
-    callback?( null, body )
+    callback?( null, parsed )

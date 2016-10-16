@@ -18,11 +18,5 @@ callback = ( error, response ) ->
 
   console.log response
 
-params =
-  symbol    : 'EURUSD'
-  margin    : 0.01
-  direction : 'long'
-  leverage  : 1
-  order_type: 'Market'
+client.order.list_open( callback )
 
-client.order.create( params, callback )

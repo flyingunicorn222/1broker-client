@@ -1,5 +1,5 @@
 OneBroker = require "../src/client"
-api_key   = require "./api_key"
+api_key   = require "./_key"
 
 if not api_key
 
