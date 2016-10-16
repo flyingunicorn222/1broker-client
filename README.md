@@ -67,10 +67,10 @@ For full [API documentation](https://1broker.com/?c=api_documentation) please re
 EXAMPLES
 ====
 
-Simple examples are provided on the [/examples](/examples) folder, including
+Simple examples are provided on the [/examples](https://github.com/flyingunicorn222/1broker-client/tree/v1/examples) folder, including
 the % Stop Loss and Take Profit syntax
 
-I'm also developing extra functions, called ["helpers"](/src/helpers) which will
+I'm also developing extra functions, called ["helpers"](https://github.com/flyingunicorn222/1broker-client/tree/v1/src/helpers) which will
 hopefully simplify the implementation of mechanical tasks.
 
 TODO
