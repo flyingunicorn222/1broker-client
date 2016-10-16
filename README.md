@@ -100,7 +100,7 @@ $coffee long_eurusd.coffee
 ```
 or
 ````bash
-$coffee short_btcusd
+$coffee short_btcusd.coffee
 ```
 Examples source code is pretty simple, please [go ahead](https://github.com/flyingunicorn222/1broker-client/blob/v1/examples/) an explore!
 
