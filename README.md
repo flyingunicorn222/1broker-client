@@ -76,7 +76,7 @@ Before running the examples you will need:
 
  - Api Token ( Create one in [Settings](https://1broker.com/?u1=account_settings) )
 
- - [Coffee-Script](http://coffeescript.org/) ````npm install coffee-script --global```
+ - [Coffee-Script](http://coffeescript.org/) ```npm install coffee-script --global```
 
  - Download the example files
 
