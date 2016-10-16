@@ -1,4 +1,5 @@
 1broker-client
+
 =====
 
 A node.js wrapper for [1broker](https://1broker.com/m/r.php?i=11468) api client.
@@ -70,10 +71,10 @@ For full [API documentation](https://1broker.com/?c=api_documentation) please re
 EXAMPLES
 ====
 
-Simple examples are provided on the [/examples](/v1/examples) folder, including
+Simple examples are provided on the [/examples](/examples) folder, including
 the % Stop Loss and Take Profit syntax
 
-I'm also developing extra functions, called ["helpers"](/v1/helpers) which will
+I'm also developing extra functions, called ["helpers"](/helpers) which will
 hopefully simplify the implementation of mechanical tasks.
 
 TODO
