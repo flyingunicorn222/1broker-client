@@ -72,13 +72,11 @@ the % Stop Loss and Take Profit syntax.
 
 Before running the examples you will need:
 
- - Have an [1broker Account](https://1broker.com/m/r.php?i=11468)
+ - [1broker Account](https://1broker.com/m/r.php?i=11468)
 
- - Go to [Settings](https://1broker.com/?u1=account_settings)
+ - Api Token ( Create one in [Settings](https://1broker.com/?u1=account_settings) )
 
- - Click "Create Api Token"
-
- - Install [coffee-script](http://coffeescript.org/) ````npm install coffee-script --global```
+ - [Coffee-Script](http://coffeescript.org/) ````npm install coffee-script --global```
 
  - Download the example files
 
@@ -91,12 +89,24 @@ $ cd examples
 
  - Edit [_key file](https://github.com/flyingunicorn222/1broker-client/blob/v1/examples/_key.coffee) and add your key between the quotes
 
-Now you can run the examples simply by:
+```bash
+# examples/_key.coffee
+module.exports ='YOUR_TOKEN_GOES_HERE'
+```
+
+Now you can run examples, for instance:
 ```bash
 $coffee long_eurusd.coffee
 ```
+or
+````bash
+$coffee short_btcusd
+```
+Examples source code is pretty simple, please [go ahead](https://github.com/flyingunicorn222/1broker-client/blob/v1/examples/) an explore!
 
-I'm also developing extra functions, called ["helpers"](https://github.com/flyingunicorn222/1broker-client/tree/v1/src/helpers) which will
+===
+
+I'm also developing more extra functions, called ["helpers"](https://github.com/flyingunicorn222/1broker-client/tree/v1/src/helpers) which will
 hopefully simplify the implementation of mechanical tasks.
 
 todo
