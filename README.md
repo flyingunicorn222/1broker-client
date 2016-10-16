@@ -1,7 +1,3 @@
-1broker-client
-
-=====
-
 A node.js wrapper for [1broker](https://1broker.com/m/r.php?i=11468) api client.
 
 Implements all API methods, also implements % Stop Loss and Take Profit when
