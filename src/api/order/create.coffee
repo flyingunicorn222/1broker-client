@@ -11,6 +11,20 @@ module.exports = ( config, params, callback ) ->
   is_percent = stop_loss?.indexOf( "%" ) isnt -1
   is_percent = is_percent || take_profit?.indexOf( "%" ) isnt -1
 
+  if params.leverage is 'MAX'
+
+    self = arguments.callee
+
+    return call config, 'market/detail', params, ( error, details ) ->
+
+      if error then return callback?( error )
+
+      details = details.response
+
+      params.leverage = Number details.maximum_leverage
+
+      self config, params, callback
+
   # if not using or using absolute values for SL / TP
   if not is_percent
 
@@ -20,7 +34,7 @@ module.exports = ( config, params, callback ) ->
 
     if params.direction is 'short'
 
-      if take_profit?.indexOf?( "%" ) isnt -1
+      if take_profit and take_profit.indexOf( "%" ) isnt -1
         take_profit = Number( take_profit.replace( "%", "" ) )
 
         take_profit = 1 - ( take_profit / 100 / params.leverage )
@@ -29,7 +43,7 @@ module.exports = ( config, params, callback ) ->
 
         params.take_profit = take_profit
 
-      if stop_loss?.indexOf?( "%" ) isnt -1
+      if stop_loss and stop_loss.indexOf( "%" ) isnt -1
 
         stop_loss = Number( stop_loss.replace( "%", "" ) )
 
@@ -42,7 +56,7 @@ module.exports = ( config, params, callback ) ->
 
     if params.direction is 'long'
 
-      if take_profit?.indexOf?( "%" ) isnt -1
+      if take_profit and take_profit.indexOf( "%" ) isnt -1
         take_profit = Number( take_profit.replace( "%", "" ) )
 
         take_profit =  1 + ( take_profit / 100 / params.leverage )
@@ -52,7 +66,7 @@ module.exports = ( config, params, callback ) ->
 
         params.take_profit = take_profit
 
-      if stop_loss?.indexOf?( "%" ) isnt -1
+      if stop_loss and stop_loss.indexOf( "%" ) isnt -1
         stop_loss = Number( stop_loss.replace( "%", "" ) )
 
         stop_loss = 1 - ( stop_loss / 100 / params.leverage )
@@ -72,7 +86,7 @@ module.exports = ( config, params, callback ) ->
 
       if params.direction is 'short'
 
-        if take_profit?.indexOf?( "%" ) isnt -1
+        if take_profit and take_profit.indexOf( "%" ) isnt -1
 
           take_profit = Number( take_profit.replace( "%", "" ) )
 
@@ -83,7 +97,7 @@ module.exports = ( config, params, callback ) ->
 
           params.take_profit = take_profit
 
-        if stop_loss?.indexOf?( "%" ) isnt -1
+        if stop_loss and stop_loss.indexOf( "%" ) isnt -1
           stop_loss = Number( stop_loss.replace( "%", "" ) )
 
           stop_loss = 1 + ( stop_loss / 100 / params.leverage )
@@ -95,7 +109,7 @@ module.exports = ( config, params, callback ) ->
 
       if params.direction is 'long'
 
-        if take_profit?.indexOf?( "%" ) isnt -1
+        if take_profit and take_profit.indexOf( "%" ) isnt -1
 
           take_profit = Number( take_profit.replace( "%", "" ) )
 
@@ -106,7 +120,7 @@ module.exports = ( config, params, callback ) ->
 
           params.take_profit = take_profit
 
-        if stop_loss?.indexOf?( "%" ) isnt -1
+        if stop_loss and stop_loss.indexOf( "%" ) isnt -1
           stop_loss = Number( stop_loss.replace( "%", "" ) )
 
           stop_loss = 1 + ( stop_loss / 100 / params.leverage )

@@ -33,6 +33,10 @@ module.exports = ( config, method, params, callback ) ->
     if error
       return callback?( error )
 
+    if response.statusCode isnt 200
+      console.log "1broker-client: error, bad statusCode: #{response.statusCode}"
+      return
+
     try
       parsed = JSON.parse( body )
     catch e
