@@ -11,19 +11,31 @@ module.exports = ( config, params, callback ) ->
   is_percent = stop_loss?.indexOf( "%" ) isnt -1
   is_percent = is_percent || take_profit?.indexOf( "%" ) isnt -1
 
-  if params.leverage is 'MAX'
+  if typeof params.leverage is 'string'
 
-    self = arguments.callee
+    params.leverage = params.leverage.toUpperCase()
 
-    return call config, 'market/detail', params, ( error, details ) ->
+    if [ 'MAX', 'HALF', 'QUARTER' ].indexOf( params.leverage ) isnt -1
 
-      if error then return callback?( error )
+      self = arguments.callee
 
-      details = details.response
+      return call config, 'market/detail', params, ( error, details ) ->
 
-      params.leverage = Number details.maximum_leverage
+        if error then return callback?( error )
 
-      self config, params, callback
+        details = details.response
+        max     = Number details.maximum_leverage
+
+        if params.leverage is 'MAX'
+          params.leverage = max
+
+        if params.leverage is 'HALF'
+          params.leverage = max / 2
+
+        if params.leverage is 'QUARTER'
+          params.leverage = max / 4
+
+        self config, params, callback
 
   # if not using or using absolute values for SL / TP
   if not is_percent
