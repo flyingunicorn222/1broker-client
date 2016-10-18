@@ -1,7 +1,18 @@
-A node.js wrapper for [1broker](https://1broker.com/m/r.php?i=11468) api client.
+A node.js wrapper for [1broker](https://1broker.com/m/r.php?i=11468) api client, this library is used by [@telebroker_bot](https://telegram.me/telebroker_bot) for telegram!
 
-Implements all API methods, also implements % Stop Loss and Take Profit when
-creating Market or Limit orders.
+It implement all [1broker API](https://1broker.com/?c=api_documentation) methods and also a couple extra features:
+
+ - % Stop Loss and Take Profit when creating Market or Limit orders.
+ - Option to use "MAX", "HALF" or "QUARTER" as leverage, so it will dynamically adjust based on market MAX leverage.
+ 
+telegram bot
+====
+All the functionality from this library is available through [@telebroker_bot](https://telegram.me/telebroker_bot) for telegram.
+
+I also created a [thread on reddit](https://www.reddit.com/r/1Broker/comments/582eks/you_can_buy_and_sell_on_1broker_directly_from/) to speak about it, i'll hopefully keep improving the bot and keeping reddit up to date with the features.
+
+Feel free to contact me there or [open a new issue](https://github.com/flyingunicorn222/1broker-client/issues/new)!
+
 
 installing
 ====
