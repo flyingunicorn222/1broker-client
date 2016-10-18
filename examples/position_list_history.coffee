@@ -18,13 +18,10 @@ callback = ( error, response ) ->
 
   console.log response
 
+# this will return the last 20 closed positions
 params =
-  symbol      : 'EURUSD'
-  margin      : 0.01
-  direction   : 'long'
-  leverage    : 200
-  order_type  : 'Market'
-  stop_loss   : '10%'
-  take_profit : '50%'
+  limit : 20
+  offset: 0
 
-client.order.create( params, callback )
+client.position.list_history( params, callback )
+
