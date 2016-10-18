@@ -30,10 +30,10 @@ module.exports = ( config, params, callback ) ->
           params.leverage = max
 
         if params.leverage is 'HALF'
-          params.leverage = max / 2
+          params.leverage = Math.ceil max / 2
 
         if params.leverage is 'QUARTER'
-          params.leverage = max / 4
+          params.leverage = Math.ceil max / 4
 
         self config, params, callback
 
