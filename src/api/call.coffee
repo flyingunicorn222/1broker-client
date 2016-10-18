@@ -24,7 +24,7 @@ module.exports = ( config, method, params, callback ) ->
 
   if params?
     for key, value of params
-      console.log "#{key}=#{value}"
+      #console.log "#{key}=#{value}"
 
       url += "&#{key}=#{value}"
 
