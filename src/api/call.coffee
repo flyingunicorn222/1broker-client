@@ -46,7 +46,6 @@ module.exports = ( config, method, params, callback ) ->
 
     if body.error
 
-      console.log 3
       return callback?( body )
 
     if body.warning
