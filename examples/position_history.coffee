@@ -23,5 +23,5 @@ params =
   limit : 20
   offset: 0
 
-client.position.list_history( params, callback )
+client.position.history( params, callback )
 

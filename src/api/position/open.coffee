@@ -2,4 +2,4 @@ call = require '../call'
 
 module.exports = ( config, callback ) ->
 
-  call config, 'account/info', callback
+  call config, 'position/open', callback
