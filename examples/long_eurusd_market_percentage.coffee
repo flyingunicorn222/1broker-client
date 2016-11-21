@@ -23,7 +23,7 @@ params =
   margin      : 0.01
   direction   : 'long'
   leverage    : 200
-  order_type  : 'Market'
+  order_type  : 'market'
   stop_loss   : '10%'
   take_profit : '50%'
 

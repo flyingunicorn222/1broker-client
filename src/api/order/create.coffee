@@ -90,7 +90,7 @@ module.exports = ( config, params, callback ) ->
 
     call config, 'order/create', params, callback
 
-  if params.order_type is 'Market'
+  if params.order_type is 'market'
 
     call config, 'market/quotes', { symbols: params.symbol }, ( error, result ) ->
 

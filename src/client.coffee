@@ -20,10 +20,10 @@ module.exports = ( api_key, referral_id ) ->
     user :
       details                : api 'user/details'
       overview               : api 'user/overview'
-      bitcoin_deposit_address: api 'account/bitcoin_deposit_address'
+      bitcoin_deposit_address: api 'user/bitcoin_deposit_address'
 
     market   :
-      detail                 : api 'market/detail'
+      detail                 : api 'market/details'
       get_bars               : api 'market/get_bars'
       list                   : api 'market/list'
       quotes                 : api 'market/quotes'
@@ -31,7 +31,7 @@ module.exports = ( api_key, referral_id ) ->
     order    :
       cancel                 : api 'order/cancel'
       create                 : api 'order/create'
-      list_open              : api 'order/list_open'
+      list_open              : api 'order/open'
 
     position :
       edit                   : api 'position/edit'

@@ -23,7 +23,7 @@ params =
   margin    : 0.01
   direction : 'short'
   leverage  : 1
-  order_type: 'Market'
+  order_type: 'market'
 
 client.order.create( params, callback )
 

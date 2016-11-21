@@ -5,6 +5,6 @@ module.exports = ( client, symbol, margin = 0.01, leverage = 1, callback ) ->
     margin    : margin
     direction : 'long'
     leverage  : leverage
-    order_type: 'Market'
+    order_type: 'market'
 
   client.order.create( params, callback )

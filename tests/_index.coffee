@@ -27,7 +27,7 @@ callback = ( error, response ) ->
 #   margin     : 0.01
 #   direction  : 'long'
 #   leverage   : 1
-#   order_type : 'Market'
+#   order_type : 'market'
 
 # client.order_create params, callback
 
