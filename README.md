@@ -54,14 +54,15 @@ client.market.quotes({
 
 ````
 
-All methods from the API have been implemented
+Most methods from the API V2 have been implemented
+
 
 ````javascript
-client.account.bitcoin_deposit_address( callback )
-client.account.info( callback )
-client.account.overview( callback )
+client.user.bitcoin_deposit_address( callback )
+client.user.details( callback )
+client.user.overview( callback )
 
-client.market.detail( params, callback )
+client.market.details( params, callback )
 client.market.get_bars( params, callback )
 client.market.list( callback )
 client.market.quotes( params, callback )
@@ -71,11 +72,14 @@ client.order.create( params, callback )
 client.order.list_open( params, callback )
 
 client.position.edit( params, callback )
-client.position.list_history( params, callback )
-client.position.list_open( params, callback )
+client.position.history( params, callback )
+client.position.open( params, callback )
+
+client.position.close( position_id, callback )
+client.position.close_cancel( position_id, callback )
 ````
 
-For full [API documentation](https://1broker.com/?c=api_documentation) please refer to the [Official API](https://1broker.com/?c=api_documentation)
+For full [API documentation](https://1broker.com/?c=en/content/api-documentation) please refer to the [Official API](https://1broker.com/?c=en/content/api-documentation)
 
 examples
 ====

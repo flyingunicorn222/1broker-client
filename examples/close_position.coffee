@@ -18,10 +18,6 @@ callback = ( error, response ) ->
 
   console.log response
 
-params =
-  position_id : 923046
-  market_close: true
-
-client.position.edit( params, callback )
+client.position.close( 923046, callback )
 
 
