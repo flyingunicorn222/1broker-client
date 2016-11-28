@@ -1,4 +1,4 @@
-A node.js wrapper for [1broker](https://1broker.com/m/r.php?i=11468) api client, this library is used by [@telebroker_bot](https://telegram.me/telebroker_bot) for telegram!
+A node.js wrapper for [1broker](https://1broker.com/m/r.php?i=11468) api client, this package is used by [@telebroker_bot](https://telegram.me/telebroker_bot) for telegram!
 
 node.js
 ===
@@ -6,7 +6,7 @@ Implements all [1broker API](https://1broker.com/?c=api_documentation) methods a
 
  - % Stop Loss and Take Profit when creating Market or Limit orders.
  - Option to use "MAX", "HALF" or "QUARTER" as leverage, so it will dynamically adjust based on market MAX leverage.
- 
+
 telegram bot
 ====
 All this functionality from this library is available through [@telebroker_bot](https://telegram.me/telebroker_bot) for telegram.
