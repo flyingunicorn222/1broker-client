@@ -38,6 +38,8 @@ module.exports = ( api_key, referral_id ) ->
       history                : api 'position/history'
       open                   : api 'position/open'
 
+    info:
+      symbols               : require './info/symbols'
   # for each helper method we will create a function that receives
   # the client as first parameter, same we did with the API methods
   # but this time sending the whole client as first parameter

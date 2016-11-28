@@ -18,7 +18,7 @@ callback = ( error, response ) ->
 
   console.log response
 
-params =
-  symbols: [ 'EURUSD', 'EURJPY' ]
+params =  symbols: client.info.symbols.all
+
 
 client.market.quotes( params, callback )
