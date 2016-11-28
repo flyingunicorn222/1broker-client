@@ -19,7 +19,7 @@ module.exports = ( config, params, callback ) ->
 
       self = arguments.callee
 
-      return call config, 'market/detail', params, ( error, details ) ->
+      return call config, 'market/details', params, ( error, details ) ->
 
         if error then return callback?( error )
 
