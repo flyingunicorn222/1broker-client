@@ -37,6 +37,8 @@ module.exports = ( api_key, referral_id ) ->
       edit                   : api 'position/edit'
       history                : api 'position/history'
       open                   : api 'position/open'
+      close                  : api 'position/close'
+      close_cancel           : api 'position/close_cancel'
 
     info:
       symbols               : require './info/symbols'
