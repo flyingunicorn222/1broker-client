@@ -1,7 +1,7 @@
 1broker-client
 =====
 
-A very simple [1broker](https://1broker.com/m/r.php?i=11468) api client, in case 
+A very simple [1broker](https://1broker.com/?c=en/action/r&i=11468) api client, in case 
 you have any suggestions or problems get in touch through github issues.
 
 installing
