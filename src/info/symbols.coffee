@@ -39,7 +39,6 @@ symbols =
     "TSLA"
     "TWTR"
     "V"
-    "VOW"
     "VOW3"
     "WU"
     "YHOO"
@@ -72,10 +71,10 @@ symbols =
 
 
 symbols.all = []
-symbols.all.push symbols.forex
-symbols.all.push symbols.stocks
-symbols.all.push symbols.indexes
-symbols.all.push symbols.commodities
-symbols.all.push symbols.crypto
+symbols.all = symbols.all.concat symbols.forex
+symbols.all = symbols.all.concat symbols.stocks
+symbols.all = symbols.all.concat symbols.indexes
+symbols.all = symbols.all.concat symbols.commodities
+symbols.all = symbols.all.concat symbols.crypto
 
 module.exports = symbols

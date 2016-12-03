@@ -23,7 +23,7 @@ module.exports = ( api_key, referral_id ) ->
       bitcoin_deposit_address: api 'user/bitcoin_deposit_address'
 
     market   :
-      detail                 : api 'market/details'
+      details                : api 'market/details'
       get_bars               : api 'market/get_bars'
       list                   : api 'market/list'
       quotes                 : api 'market/quotes'
@@ -42,6 +42,8 @@ module.exports = ( api_key, referral_id ) ->
 
     info:
       symbols               : require './info/symbols'
+      details               : require './info/details'
+
   # for each helper method we will create a function that receives
   # the client as first parameter, same we did with the API methods
   # but this time sending the whole client as first parameter

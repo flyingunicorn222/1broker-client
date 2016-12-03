@@ -14,6 +14,8 @@ clean:
 build:
 	rm -rf ./lib
 	./node_modules/.bin/coffee --bare -o lib/ -c src/
+	./node_modules/.bin/coffee scripts/fetch_details.coffee
+	cp src/info/details.json lib/info/details.json
 
 publish:
 	npm publish
