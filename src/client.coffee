@@ -40,9 +40,8 @@ module.exports = ( api_key, referral_id ) ->
       close                  : api 'position/close'
       close_cancel           : api 'position/close_cancel'
 
-    info:
-      symbols               : require './info/symbols'
-      details               : require './info/details'
+    # borrow info from module itself
+    info : module.exports.info
 
   # for each helper method we will create a function that receives
   # the client as first parameter, same we did with the API methods
@@ -56,3 +55,9 @@ module.exports = ( api_key, referral_id ) ->
   client.close = helper 'close'
 
   return client
+
+# exports info and symbols statically so we don't need to create an instace
+# with keys in order to list symbols or see market details
+module.exports.info =
+  symbols               : require './info/symbols'
+  details               : require './info/details'

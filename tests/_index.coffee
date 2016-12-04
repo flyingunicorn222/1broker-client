@@ -22,7 +22,7 @@ callback = ( error, response ) ->
 # client.account_info callback
 # client.account_bitcoin_deposit_address callback
 
-# params = 
+# params =
 #   symbol     : 'BTCUSD'
 #   margin     : 0.01
 #   direction  : 'long'
@@ -35,7 +35,7 @@ client.order_list_open callback
 
 # client.position_list_history callback
 
-# params = 
+# params =
 #   position_id: 123
 #   stop_loss  : 0
 
@@ -43,6 +43,6 @@ client.order_list_open callback
 
 # client.market_list callback
 
-# client.market_detail { symbol: "BTCUSD" }, callback
+# client.market_details { symbol: "BTCUSD" }, callback
 
 # client.market_quotes { symbols: "BTCUSD,GOLD" }, callback
