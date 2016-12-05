@@ -42,7 +42,7 @@ module.exports = ( config, params, callback ) ->
 
     return call config, 'order/create', params, callback
 
-  if params.order_type is 'Limit'
+  if params.order_type is 'limit'
 
     if params.direction is 'short'
 

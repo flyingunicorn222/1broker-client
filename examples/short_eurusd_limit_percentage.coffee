@@ -23,8 +23,8 @@ params =
   margin      : 0.01
   direction   : 'short'
   leverage    : 1
-  order_type  : 'Limit'
-  # when doing Limit orders, that's how you specify the entry_price
+  order_type  : 'limit'
+  # when doing limit orders, that's how you specify the entry_price
   order_type_parameter : '1.0'
   stop_loss   : '10%'
   take_profit : '50%'

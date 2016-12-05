@@ -2,7 +2,7 @@
   "author": "flyingunicorn222 (github.com/flyingunicorn222)",
   "name": "1broker-client",
   "description": "node.js wrapper for 1broker.com api, providing extra features",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/flyingunicorn222/1broker-client.git"
