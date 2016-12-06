@@ -70,11 +70,12 @@ symbols =
   ]
 
 
-symbols.all = []
-symbols.all = symbols.all.concat symbols.forex
-symbols.all = symbols.all.concat symbols.stocks
-symbols.all = symbols.all.concat symbols.indexes
-symbols.all = symbols.all.concat symbols.commodities
-symbols.all = symbols.all.concat symbols.crypto
+symbols.all = [].concat(
+  symbols.forex,
+  symbols.stocks,
+  symbols.indexes,
+  symbols.commodities,
+  symbols.crypto
+)
 
 module.exports = symbols
