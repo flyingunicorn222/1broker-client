@@ -7,13 +7,15 @@ module.exports = ( config, params, callback ) ->
 
   # when creating an order stop loss is always below the
   # price
-  if stop_loss[0] is '-' or stop_loss[0] is '+'
-    stop_loss = stop_loss.substr(1)
+  if stop_loss
+    if stop_loss?[0] is '-' or stop_loss[0] is '+'
+      stop_loss = stop_loss.substr(1)
 
   # when creating an order take profit is always over the
   # price
-  if take_profit[0] is '-' or take_profit[0] is '+'
-    take_profit = take_profit.substr(1)
+  if take_profit
+    if take_profit[0] is '-' or take_profit[0] is '+'
+      take_profit = take_profit.substr(1)
 
   params.leverage = params.leverage || 1
   params.margin   = params.margin   || 0.01
