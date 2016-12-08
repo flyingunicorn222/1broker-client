@@ -149,6 +149,4 @@ module.exports = ( config, params, callback ) ->
 
           params.stop_loss = stop_loss
 
-      console.log 'calling with params ->', params
-
-      #call config, 'order/create', params, callback
+      call config, 'order/create', params, callback

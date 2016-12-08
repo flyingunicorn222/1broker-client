@@ -3,7 +3,7 @@ Big = require 'big.js'
 
 module.exports = ( symbol, entry, current_price ) ->
 
-  decimals = details[ symbol ].decimals
+  decimals = details[ symbol.toUpperCase() ].decimals
 
   point_size = 1 / Math.pow( 10, decimals )
 
