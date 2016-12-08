@@ -1,24 +1,28 @@
-call = require '../call'
+call    = require '../call'
+details = require '../../info/details'
+
+# TODO: replace % calculation for the new add.percentage method
+# TODO: add support to +/- points as well, not only percentage
 
 module.exports = ( config, params, callback ) ->
 
   stop_loss   = params.stop_loss
   take_profit = params.take_profit
 
-  # when creating an order stop loss is always below the
-  # price
+  params.leverage = params.leverage || 1
+  params.margin   = params.margin   || 0.01
+
+  params.symbol = params.symbol.toUpperCase()
+
+  # when creating an order stop loss is always below the price
   if stop_loss
     if stop_loss?[0] is '-' or stop_loss[0] is '+'
       stop_loss = stop_loss.substr(1)
 
-  # when creating an order take profit is always over the
-  # price
+  # when creating an order take profit is always over the price
   if take_profit
     if take_profit[0] is '-' or take_profit[0] is '+'
       take_profit = take_profit.substr(1)
-
-  params.leverage = params.leverage || 1
-  params.margin   = params.margin   || 0.01
 
   is_percent = stop_loss?.indexOf( "%" ) isnt -1
   is_percent = is_percent || take_profit?.indexOf( "%" ) isnt -1
@@ -29,25 +33,16 @@ module.exports = ( config, params, callback ) ->
 
     if [ 'MAX', 'HALF', 'QUARTER' ].indexOf( params.leverage ) isnt -1
 
-      self = arguments.callee
+      max = details[ params.symbol ].maximum_leverage
 
-      return call config, 'market/details', params, ( error, details ) ->
+      if params.leverage is 'MAX'
+        params.leverage = max
 
-        if error then return callback?( error )
+      if params.leverage is 'HALF'
+        params.leverage = Math.ceil max / 2
 
-        details = details.response
-        max     = Number details.maximum_leverage
-
-        if params.leverage is 'MAX'
-          params.leverage = max
-
-        if params.leverage is 'HALF'
-          params.leverage = Math.ceil max / 2
-
-        if params.leverage is 'QUARTER'
-          params.leverage = Math.ceil max / 4
-
-        self config, params, callback
+      if params.leverage is 'QUARTER'
+        params.leverage = Math.ceil max / 4
 
   # if not using or using absolute values for SL / TP
   if not is_percent
@@ -154,4 +149,6 @@ module.exports = ( config, params, callback ) ->
 
           params.stop_loss = stop_loss
 
-      call config, 'order/create', params, callback
+      console.log 'calling with params ->', params
+
+      #call config, 'order/create', params, callback
