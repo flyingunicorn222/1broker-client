@@ -42,6 +42,8 @@ module.exports = ( api_key, referral_id ) ->
 
     # borrow info from module itself
     info : module.exports.info
+    add  : module.exports.add
+    get  : module.exports.get
 
   # for each helper method we will create a function that receives
   # the client as first parameter, same we did with the API methods
@@ -52,7 +54,7 @@ module.exports = ( api_key, referral_id ) ->
   # mapping helper functions
   client.long  = helper 'long'
   client.short = helper 'short'
-  client.close = helper 'close'
+
 
   return client
 
@@ -61,3 +63,11 @@ module.exports = ( api_key, referral_id ) ->
 module.exports.info =
   symbols               : require './info/symbols'
   details               : require './info/details'
+
+module.exports.add =
+  points     : require './helpers/add/points'
+  percentage : require './helpers/add/percentage'
+
+module.exports.get =
+  points     : require './helpers/get/points'
+  percentage : require './helpers/get/percentage'
