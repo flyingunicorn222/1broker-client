@@ -28,7 +28,7 @@ module.exports = ( config, method, params, callback ) ->
 
       url += "&#{key}=#{value}"
 
-  request { url: url, strictSSL: on }, ( error, response, body ) ->
+  request { url: url, strictSSL: config.strictSSL }, ( error, response, body ) ->
 
     if error
       return callback?( error )
