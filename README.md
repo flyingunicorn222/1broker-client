@@ -1,4 +1,4 @@
-A node.js wrapper for [1broker](https://1broker.com/m/r.php?i=11468) api client, this package is used by [@telebroker_bot](https://telegram.me/telebroker_bot) for telegram!
+A node.js wrapper for [1broker](https://1broker.com/?c=en/action/r&i=11468) api client, this package is used by [@telebroker_bot](https://telegram.me/telebroker_bot) for telegram!
 
 node.js
 ===
@@ -89,7 +89,7 @@ the % Stop Loss and Take Profit syntax.
 
 Before running the examples you will need:
 
- - [1broker Account](https://1broker.com/m/r.php?i=11468)
+ - [1broker Account](https://1broker.com/?c=en/action/r&i=11468)
 
  - Api Token ( Create one in [Settings](https://1broker.com/?u1=account_settings) )
 
@@ -154,8 +154,8 @@ Thank You!
 disclaimer
 ====
  - By default when creating an order this library will use my referral_id,
-which means I'll receive a small amount of BTC from [1broker](https://1broker.com/m/r.php?i=11468)
-when you create an order using this library! It would be great if you could keep it this way!
+which means I'll receive a small amount of BTC from [1broker](https://1broker.com/?c=en/action/r&i=11468)
+when you create an order! It would be great if you could keep it this way! If you don't agree update the value on the config file.
 
- - [1broker](https://1broker.com/m/r.php?i=11468) links on this documentation
+ - [1broker](https://1broker.com/?c=en/action/r&i=11468) links on this documentation
 also constains my referral link
