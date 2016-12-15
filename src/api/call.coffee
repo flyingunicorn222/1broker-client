@@ -35,6 +35,7 @@ module.exports = ( config, method, params, callback ) ->
 
     if response.statusCode isnt 200
       console.log "1broker-client: error, bad statusCode: #{response.statusCode}"
+      callback response
       return
 
     try
