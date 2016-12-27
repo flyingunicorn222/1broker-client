@@ -24,7 +24,7 @@ module.exports = ( api_key, referral_id ) ->
 
     market   :
       details                : api 'market/details'
-      get_bars               : api 'market/get_bars'
+      bars                   : api 'market/bars'
       list                   : api 'market/list'
       quotes                 : api 'market/quotes'
 
