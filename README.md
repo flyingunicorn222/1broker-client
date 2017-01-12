@@ -1,11 +1,20 @@
+1Broker-client
+===
+
 A node.js wrapper for [1broker](https://1broker.com/?c=en/action/r&i=11468) api client, this package is used by [@telebroker_bot](https://telegram.me/telebroker_bot) for telegram!
 
-node.js
-===
+
 Implements all [1broker API](https://1broker.com/?c=api_documentation) methods and also a couple extra features:
 
  - % Stop Loss and Take Profit when creating Market or Limit orders.
  - Option to use "MAX", "HALF" or "QUARTER" as leverage, so it will dynamically adjust based on market MAX leverage.
+ - Market information is cached on [details.json](https://github.com/flyingunicorn222/1broker-client/blob/v2/src/info/details.json) allowing quick and smart calculations, for instance:
+   - How many points you making in your position?
+     - see [client.get.points( symbol, entry, current_price )](https://github.com/flyingunicorn222/1broker-client/blob/v2/src/helpers/get/points.coffee)
+   - At what value will a reach that many points?
+     - see [client.add.points( symbol, value, points )](https://github.com/flyingunicorn222/1broker-client/blob/v2/src/helpers/add/points.coffee)
+   - How many percent a given difference represents with a given leverage?
+     - see [client.get.percentage( entry, difference, leverage )](https://github.com/flyingunicorn222/1broker-client/blob/v2/src/helpers/get/percentage.coffee)
 
 telegram bot
 ====
