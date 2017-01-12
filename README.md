@@ -47,7 +47,7 @@ OneBroker = require( "1broker-client" )
 
 client = OneBroker( "YOU_API_KEY" )
 
-client.account.overview( function( error, overview ) {
+client.user.overview( function( error, overview ) {
   if( error ) return console.error( error );
 
   console.log( overview );
