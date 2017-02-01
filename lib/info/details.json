@@ -7,8 +7,8 @@
     "type": "CFD",
     "maximum_leverage": 5,
     "maximum_amount": 20,
-    "overnight_charge_long_percent": 0.0015,
-    "overnight_charge_short_percent": 0.001,
+    "overnight_charge_long_percent": 0.001923,
+    "overnight_charge_short_percent": 0.000962,
     "decimals": 2
   },
   "SILVER": {

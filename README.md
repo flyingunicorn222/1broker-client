@@ -1,22 +1,34 @@
-A node.js wrapper for [1broker](https://1broker.com/?c=en/action/r&i=11468) api client, this package is used by [@telebroker_bot](https://telegram.me/telebroker_bot) for telegram!
-
-node.js
+1Broker-client
 ===
-Implements all [1broker API](https://1broker.com/?c=api_documentation) methods and also a couple extra features:
+
+####This is a node.js wrapper for [1Broker's API](https://1broker.com/?c=en/action/r&i=11468), this package is mainly used and maintaned by [@telebroker_bot](https://telegram.me/telebroker_bot) an incredible bot to open orders and manage trades directly from [Telegram](https://telegram.org/) !!!
+
+####Join us at [1Broker Trollbox](https://telegram.me/Trollbox_1Broker) for some trades and trolling, feel free to use the group to ask anything about the Telegram bot as well!
+--
+
+
+This library implements all [1Broker API](https://1broker.com/?c=api_documentation) methods and also a couple extra features:
 
  - % Stop Loss and Take Profit when creating Market or Limit orders.
  - Option to use "MAX", "HALF" or "QUARTER" as leverage, so it will dynamically adjust based on market MAX leverage.
+ - Market information is cached on [details.json](https://github.com/flyingunicorn222/1broker-client/blob/v2/src/info/details.json) allowing quick and smart calculations, for instance:
+   - How many points you making in your position?
+     - see [client.get.points( symbol, entry, current_price )](https://github.com/flyingunicorn222/1broker-client/blob/v2/src/helpers/get/points.coffee)
+   - At what value will a reach that many points?
+     - see [client.add.points( symbol, value, points )](https://github.com/flyingunicorn222/1broker-client/blob/v2/src/helpers/add/points.coffee)
+   - How many percent a given difference represents with a given leverage?
+     - see [client.get.percentage( entry, difference, leverage )](https://github.com/flyingunicorn222/1broker-client/blob/v2/src/helpers/get/percentage.coffee)
 
-telegram bot
+Telegram bot
 ====
-All this functionality from this library is available through [@telebroker_bot](https://telegram.me/telebroker_bot) for telegram.
+All this functionality from this library is available through [@telebroker_bot](https://telegram.me/telebroker_bot) for Telegram, this way you don't have to run commands from your command line and similars, using the bot you get some sort of API REPL which is a lot of fun!
 
-I also created a [thread on reddit](https://www.reddit.com/r/1Broker/comments/582eks/you_can_buy_and_sell_on_1broker_directly_from/) to speak about it, i'll hopefully keep improving the bot and keeping reddit up to date with the features.
+I also created a [Thread on reddit](https://www.reddit.com/r/1Broker/comments/582eks/you_can_buy_and_sell_on_1broker_directly_from/) to speak about it, i'll hopefully keep improving the bot and keeping reddit up to date with the features.
 
 Feel free to contact me there or [open a new issue](https://github.com/flyingunicorn222/1broker-client/issues/new)!
 
 
-installing
+Installing
 ====
 
 ````npm install --save 1broker-client````
@@ -35,7 +47,7 @@ OneBroker = require( "1broker-client" )
 
 client = OneBroker( "YOU_API_KEY" )
 
-client.account.overview( function( error, overview ) {
+client.user.overview( function( error, overview ) {
   if( error ) return console.error( error );
 
   console.log( overview );
@@ -145,7 +157,9 @@ to edit and submit a pull request.
 In case you find an issue, have a request or recommendation feel free to [open
 an issue](https://github.com/flyingunicorn222/1broker-client/issues/new), it will be highly appreciated.
 
-You can also [donate to support this library and more freebies!](https://blockchain.info/address/1767DuD8teMeeTV2DtPviqMYE1G13169x3)
+You can also [donate to support this library and more freebies!](https://blockchain.info/address/1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx)
+
+**BTC** [*1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx*](https://blockchain.info/address/1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx)
 
 Feel free to send me a message on reddit, I'm [flyingunicorn222](https://www.reddit.com/user/flyingunicorn222)
 

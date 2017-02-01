@@ -10,8 +10,6 @@ module.exports = ( config, method, params, callback ) ->
 
   url = "#{config.url}/#{method}.php?token=#{config.api_key}"
 
-  console.log 'params ->', params
-
   if method is 'order/create'
     decimals = details[ params.symbol.toUpperCase() ].decimals
 
@@ -41,8 +39,6 @@ module.exports = ( config, method, params, callback ) ->
       #console.log "#{key}=#{value}"
 
       url += "&#{key}=#{value}"
-
-  console.log 'request ->', params
 
   request { url: url, strictSSL: config.strictSSL }, ( error, response, body ) ->
 
