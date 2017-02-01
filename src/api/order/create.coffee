@@ -1,32 +1,35 @@
 call    = require '../call'
 details = require '../../info/details'
 
+add_percentage = require '../../helpers/add/percentage'
+add_points     = require '../../helpers/add/points'
+
 # TODO: replace % calculation for the new add.percentage method
 # TODO: add support to +/- points as well, not only percentage
 
 module.exports = ( config, params, callback ) ->
 
-  stop_loss   = params.stop_loss
-  take_profit = params.take_profit
+  stop_loss   = params.stop_loss            || ""
+  take_profit = params.take_profit          || ""
+  price       = params.order_type_parameter || ""
 
   params.leverage = params.leverage || 1
   params.margin   = params.margin   || 0.01
 
   params.symbol = params.symbol.toUpperCase()
 
-  # when creating an order stop loss is always below the price
-  if stop_loss
-    if stop_loss?[0] is '-' or stop_loss[0] is '+'
-      stop_loss = stop_loss.substr(1)
+  needs_quote = false
 
-  # when creating an order take profit is always over the price
-  if take_profit
-    if take_profit[0] is '-' or take_profit[0] is '+'
-      take_profit = take_profit.substr(1)
+  ## if it's percentage we will need quote
+  needs_quote = needs_quote or stop_loss.indexOf( "%" ) isnt -1
+  needs_quote = needs_quote or take_profit.indexOf( "%" ) isnt -1
 
-  is_percent = stop_loss?.indexOf( "%" ) isnt -1
-  is_percent = is_percent || take_profit?.indexOf( "%" ) isnt -1
+  ## if it's points we will need quote
+  needs_quote = needs_quote or (   stop_loss[0] is '-' or   stop_loss[0] is '+' )
+  needs_quote = needs_quote or ( take_profit[0] is '-' or take_profit[0] is '+' )
 
+  ## check for strings on leverage field, this way we can convert
+  ## MAX / HALF / QUARTER to actual numbers
   if typeof params.leverage is 'string'
 
     params.leverage = params.leverage.toUpperCase()
@@ -44,58 +47,67 @@ module.exports = ( config, params, callback ) ->
       if params.leverage is 'QUARTER'
         params.leverage = Math.ceil max / 4
 
+  if not stop_loss
+    delete params.stop_loss
+
+  if not take_profit
+    delete params.take_profit
+
   # if not using or using absolute values for SL / TP
-  if not is_percent
+  if not needs_quote
+
+    console.log "doesnt need quote, directly call!"
+
+    return call config, 'order/create', params, callback
+
+  ## NOTE: set and check variable at the same time here!
+  if tp_is_percentage = take_profit.indexOf( "%" ) isnt -1
+    take_profit = Number take_profit.replace( "%", "" )
+
+  else if tp_is_points = ( take_profit[0] is '-' or take_profit[0] is '+' )
+    take_profit = Number take_profit
+  ##
+  #NOTE: set and check variable at the same time here!
+  if sl_is_percentage = stop_loss.indexOf("%") isnt -1
+    stop_loss = Number stop_loss.replace( "%", "" )
+  else if sl_is_points = ( stop_loss[0] is '-' or stop_loss[0] is '+' )
+    stop_loss = Number stop_loss
+
+  ## always read % as positive, since when opening the order it will
+  ## always be negative and we need to normalize
+
+  if take_profit then take_profit = Math.abs take_profit
+  if stop_loss   then stop_loss   = Math.abs stop_loss
+
+  if params.direction is 'short'
+    take_profit = -take_profit
+
+  if params.direction is 'long'
+    stop_loss   = -stop_loss
+
+  execute = ( price ) ->
+    if tp_is_percentage
+      take_profit = add_percentage( price, params.leverage, take_profit )
+
+    if sl_is_percentage
+      stop_loss   = add_percentage( price, params.leverage, stop_loss )
+
+    if tp_is_points
+      take_profit = add_points( params.symbol, price, take_profit )
+
+    if sl_is_points
+      stop_loss   = add_points( params.symbol, price, stop_loss )
+
+    if take_profit then params.take_profit = take_profit
+    if stop_loss   then params.stop_loss   = stop_loss
 
     return call config, 'order/create', params, callback
 
   if params.order_type is 'limit'
 
-    if params.direction is 'short'
-
-      if take_profit and take_profit.indexOf( "%" ) isnt -1
-        take_profit = Number( take_profit.replace( "%", "" ) )
-
-        take_profit = 1 - ( take_profit / 100 / params.leverage )
-
-        take_profit = Number( params.order_type_parameter ) * take_profit
-
-        params.take_profit = take_profit
-
-      if stop_loss and stop_loss.indexOf( "%" ) isnt -1
-
-        stop_loss = Number( stop_loss.replace( "%", "" ) )
-
-        stop_loss = 1 + ( stop_loss / 100 / params.leverage )
-
-        stop_loss = Number( params.order_type_parameter ) * stop_loss
-        stop_loss = Number( stop_loss.toFixed(6) )
-
-        params.stop_loss = stop_loss
-
-    if params.direction is 'long'
-
-      if take_profit and take_profit.indexOf( "%" ) isnt -1
-        take_profit = Number( take_profit.replace( "%", "" ) )
-
-        take_profit =  1 + ( take_profit / 100 / params.leverage )
-
-        take_profit = Number( params.order_type_parameter ) * take_profit
-        take_profit = Number( take_profit.toFixed(6) )
-
-        params.take_profit = take_profit
-
-      if stop_loss and stop_loss.indexOf( "%" ) isnt -1
-        stop_loss = Number( stop_loss.replace( "%", "" ) )
-
-        stop_loss = 1 - ( stop_loss / 100 / params.leverage )
-
-        stop_loss = Number( params.order_type_parameter ) * stop_loss
-        stop_loss = Number( stop_loss.toFixed(6) )
-
-        params.stop_loss = stop_loss
-
-    call config, 'order/create', params, callback
+    ## if its a limit order we already know all the values
+    ## put the order, it's the end of our work!
+    return execute price
 
   if params.order_type is 'market'
 
@@ -104,49 +116,9 @@ module.exports = ( config, params, callback ) ->
       if error then return callback?( error )
 
       if params.direction is 'short'
-
-        if take_profit and take_profit.indexOf( "%" ) isnt -1
-
-          take_profit = Number( take_profit.replace( "%", "" ) )
-
-          take_profit = 1 - ( take_profit / 100 / params.leverage )
-
-          take_profit = Number( result.response[0].bid ) * take_profit
-          take_profit = Number( take_profit.toFixed(6) )
-
-          params.take_profit = take_profit
-
-        if stop_loss and stop_loss.indexOf( "%" ) isnt -1
-          stop_loss = Number( stop_loss.replace( "%", "" ) )
-
-          stop_loss = 1 + ( stop_loss / 100 / params.leverage )
-
-          stop_loss = Number( result.response[0].bid ) * stop_loss
-          stop_loss = Number( stop_loss.toFixed(6) )
-
-          params.stop_loss = stop_loss
+        price = result.response[0].bid
 
       if params.direction is 'long'
+        price = result.response[0].ask
 
-        if take_profit and take_profit.indexOf( "%" ) isnt -1
-
-          take_profit = Number( take_profit.replace( "%", "" ) )
-
-          take_profit = 1 + ( take_profit / 100 / params.leverage )
-
-          take_profit = Number( result.response[0].ask ) * take_profit
-          take_profit = Number( take_profit.toFixed(6) )
-
-          params.take_profit = take_profit
-
-        if stop_loss and stop_loss.indexOf( "%" ) isnt -1
-          stop_loss = Number( stop_loss.replace( "%", "" ) )
-
-          stop_loss = 1 + ( stop_loss / 100 / params.leverage )
-
-          stop_loss = Number( result.response[0].ask ) / stop_loss
-          stop_loss = Number( stop_loss.toFixed(6) )
-
-          params.stop_loss = stop_loss
-
-      call config, 'order/create', params, callback
+      return execute price

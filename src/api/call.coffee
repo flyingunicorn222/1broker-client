@@ -1,4 +1,5 @@
 request = require 'request'
+details = require '../info/details'
 
 module.exports = ( config, method, params, callback ) ->
 
@@ -8,6 +9,19 @@ module.exports = ( config, method, params, callback ) ->
     params   = null
 
   url = "#{config.url}/#{method}.php?token=#{config.api_key}"
+
+  console.log 'params ->', params
+
+  if method is 'order/create'
+    decimals = details[ params.symbol.toUpperCase() ].decimals
+
+    if params.stop_loss
+      params.stop_loss = Number params.stop_loss.toFixed( decimals )
+
+    if params.take_profit
+      params.take_profit = Number params.take_profit.toFixed( decimals )
+
+    params.margin = Number params.margin.toFixed( decimals )
 
   if config.referral_id? and not params?.referral_id
     url += "&referral_id=#{config.referral_id}"
@@ -27,6 +41,8 @@ module.exports = ( config, method, params, callback ) ->
       #console.log "#{key}=#{value}"
 
       url += "&#{key}=#{value}"
+
+  console.log 'request ->', params
 
   request { url: url, strictSSL: config.strictSSL }, ( error, response, body ) ->
 
