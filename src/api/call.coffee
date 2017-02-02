@@ -10,16 +10,17 @@ module.exports = ( config, method, params, callback ) ->
 
   url = "#{config.url}/#{method}.php?token=#{config.api_key}"
 
+  # ensure correct number of decimals when creating order
   if method is 'order/create'
     decimals = details[ params.symbol.toUpperCase() ].decimals
 
     if params.stop_loss
-      params.stop_loss = Number params.stop_loss.toFixed( decimals )
+      params.stop_loss = Number( params.stop_loss ).toFixed( decimals )
 
     if params.take_profit
-      params.take_profit = Number params.take_profit.toFixed( decimals )
+      params.take_profit = Number( params.take_profit ).toFixed( decimals )
 
-    params.margin = Number params.margin.toFixed( decimals )
+    params.margin = Number( params.margin ).toFixed( decimals )
 
   if config.referral_id? and not params?.referral_id
     url += "&referral_id=#{config.referral_id}"
