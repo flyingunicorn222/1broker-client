@@ -119,7 +119,7 @@ $ cd examples
  - Edit [_key file](https://github.com/flyingunicorn222/1broker-client/blob/v1/examples/_key.coffee) and add your key between the quotes
 
 ```bash
-# examples/_key.coffee
+# _key.coffee
 module.exports ='YOUR_TOKEN_GOES_HERE'
 ```
 

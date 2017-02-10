@@ -5,7 +5,7 @@
 # - name, category and type of each market
 
 fs     = require 'fs'
-key    = require './_key'
+key    = require '../_key'
 Client = require '../src/client'
 
 client = new Client key

@@ -101,6 +101,10 @@ module.exports = ( config, params, callback ) ->
     if take_profit then params.take_profit = take_profit
     if stop_loss   then params.stop_loss   = stop_loss
 
+    console.log '1broker client params ->', params
+
+    return
+
     return call config, 'order/create', params, callback
 
   if params.order_type is 'limit'
