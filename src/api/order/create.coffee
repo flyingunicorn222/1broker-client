@@ -79,10 +79,10 @@ module.exports = ( config, params, callback ) ->
   if take_profit then take_profit = Math.abs take_profit
   if stop_loss   then stop_loss   = Math.abs stop_loss
 
-  if params.direction is 'short'
+  if params.direction is 'short' and tp_is_percentage
     take_profit = -take_profit
 
-  if params.direction is 'long'
+  if params.direction is 'long'  and sl_is_percentage
     stop_loss   = -stop_loss
 
   execute = ( price ) ->
