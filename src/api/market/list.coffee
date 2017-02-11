@@ -1,5 +1,5 @@
 call = require '../call'
 
-module.exports = ( config, callback ) ->
+module.exports = ( config, params, callback ) ->
 
-  call config, 'market/list', callback
+  call config, 'market/list', params, callback

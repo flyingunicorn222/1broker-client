@@ -1,7 +1,5 @@
 call = require '../call'
 
-module.exports = ( config, position_id, callback ) ->
-
-  params = position_id: position_id
+module.exports = ( config, params, callback ) ->
 
   call config, 'position/close_cancel', params, callback

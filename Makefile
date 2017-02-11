@@ -7,12 +7,12 @@ install:
 	npm install
 
 docs:
-	rm -rf ./docs
+	#rm -rf ./docs
 	./node_modules/.bin/docco src/{**/*,*} -l linear
 
 clean:
 	rm -rf ./lib
-	rm -rf ./docs
+	#rm -rf ./docs
 
 build:
 	rm -rf ./lib
