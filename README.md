@@ -74,7 +74,7 @@ client.market.quotes({
 
 ````
 
-Most methods from the API V2 have been implemented
+All methods from API V2 have been implemented
 
 
 ````javascript
