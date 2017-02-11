@@ -1,4 +1,4 @@
-1Broker-client [![Build Status](https://travis-ci.org/flyingunicorn222/1broker-client)](https://travis-ci.org/flyingunicorn222/1broker-client)
+1Broker-client [![Build Status](https://travis-ci.org/flyingunicorn222/1broker-client.png)](https://travis-ci.org/flyingunicorn222/1broker-client)
 ===
 
 ####This is a node.js wrapper for [1Broker's API](https://1broker.com/?c=en/action/r&i=11468), this package is mainly used and maintaned by [@telebroker_bot](https://telegram.me/telebroker_bot) an incredible bot to open orders and manage trades directly from [Telegram](https://telegram.org/) !!!
