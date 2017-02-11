@@ -1,4 +1,7 @@
-.PHONY: docs
+.PHONY: docs test
+
+NODEMON=./node_modules/.bin/nodemon
+MOCHA=./node_modules/.bin/mocha
 
 install:
 	npm install
@@ -21,4 +24,4 @@ publish:
 	npm publish
 
 test:
-	./node_modules/.bin/nodemon --watch src -e coffee --exec "coffee ./tests/_index.coffee"
+	$(NODEMON) --watch test --watch src -e coffee --exec "$(MOCHA) test/*.coffee"

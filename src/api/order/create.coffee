@@ -1,11 +1,5 @@
-call    = require '../call'
-details = require '../../info/details'
-
-add_percentage = require '../../helpers/add/percentage'
-add_points     = require '../../helpers/add/points'
-
-# TODO: replace % calculation for the new add.percentage method
-# TODO: add support to +/- points as well, not only percentage
+call      = require '../call'
+calculate = require '../../helpers/calculate'
 
 module.exports = ( config, params, callback ) ->
 
@@ -18,34 +12,19 @@ module.exports = ( config, params, callback ) ->
 
   params.symbol = params.symbol.toUpperCase()
 
-  needs_quote = false
+  if tp_is_percentage = take_profit.indexOf( "%" ) isnt -1
+    take_profit = Number take_profit.replace( "%", "" )
+    take_profit = "#{take_profit}%"
+  else if tp_is_points = ( take_profit[0] is '-' or take_profit[0] is '+' )
+    take_profit = Number take_profit
+    take_profit = "+#{take_profit}"
 
-  ## if it's percentage we will need quote
-  needs_quote = needs_quote or stop_loss.indexOf( "%" ) isnt -1
-  needs_quote = needs_quote or take_profit.indexOf( "%" ) isnt -1
-
-  ## if it's points we will need quote
-  needs_quote = needs_quote or (   stop_loss[0] is '-' or   stop_loss[0] is '+' )
-  needs_quote = needs_quote or ( take_profit[0] is '-' or take_profit[0] is '+' )
-
-  ## check for strings on leverage field, this way we can convert
-  ## MAX / HALF / QUARTER to actual numbers
-  if typeof params.leverage is 'string'
-
-    params.leverage = params.leverage.toUpperCase()
-
-    if [ 'MAX', 'HALF', 'QUARTER' ].indexOf( params.leverage ) isnt -1
-
-      max = details[ params.symbol ].maximum_leverage
-
-      if params.leverage is 'MAX'
-        params.leverage = max
-
-      if params.leverage is 'HALF'
-        params.leverage = Math.ceil max / 2
-
-      if params.leverage is 'QUARTER'
-        params.leverage = Math.ceil max / 4
+  if sl_is_percentage = stop_loss.indexOf("%") isnt -1
+    stop_loss = Number stop_loss.replace( "%", "" )
+    stop_loss = "-#{stop_loss}%"
+  else if sl_is_points = ( stop_loss[0] is '-' or stop_loss[0] is '+' )
+    stop_loss = Number stop_loss
+    stop_loss = "-#{stop_loss}"
 
   if not stop_loss
     delete params.stop_loss
@@ -53,57 +32,20 @@ module.exports = ( config, params, callback ) ->
   if not take_profit
     delete params.take_profit
 
+  needs_quote = tp_is_percentage or tp_is_points
+  needs_quote = needs_quote or sl_is_percentage or sl_is_points
+
   # if not using or using absolute values for SL / TP
   if not needs_quote
 
-    console.log "doesnt need quote, directly call!"
-
     return call config, 'order/create', params, callback
 
-  ## NOTE: set and check variable at the same time here!
-  if tp_is_percentage = take_profit.indexOf( "%" ) isnt -1
-    take_profit = Number take_profit.replace( "%", "" )
-
-  else if tp_is_points = ( take_profit[0] is '-' or take_profit[0] is '+' )
-    take_profit = Number take_profit
-  ##
-  #NOTE: set and check variable at the same time here!
-  if sl_is_percentage = stop_loss.indexOf("%") isnt -1
-    stop_loss = Number stop_loss.replace( "%", "" )
-  else if sl_is_points = ( stop_loss[0] is '-' or stop_loss[0] is '+' )
-    stop_loss = Number stop_loss
-
-  ## always read % as positive, since when opening the order it will
-  ## always be negative and we need to normalize
-
-  if take_profit then take_profit = Math.abs take_profit
-  if stop_loss   then stop_loss   = Math.abs stop_loss
-
-  if params.direction is 'short' and tp_is_percentage
-    take_profit = -take_profit
-
-  if params.direction is 'long'  and sl_is_percentage
-    stop_loss   = -stop_loss
-
   execute = ( price ) ->
-    if tp_is_percentage
-      take_profit = add_percentage( price, params.leverage, take_profit )
 
-    if sl_is_percentage
-      stop_loss   = add_percentage( price, params.leverage, stop_loss )
+    calculated = calculate params.symbol, params.leverage, price, params.direction, params.stop_loss, params.take_profit
 
-    if tp_is_points
-      take_profit = add_points( params.symbol, price, take_profit )
-
-    if sl_is_points
-      stop_loss   = add_points( params.symbol, price, stop_loss )
-
-    if take_profit then params.take_profit = take_profit
-    if stop_loss   then params.stop_loss   = stop_loss
-
-    console.log '1broker client params ->', params
-
-    return
+    params.take_profit = calculated.take_profit
+    params.stop_loss   = calculated.stop_loss
 
     return call config, 'order/create', params, callback
 

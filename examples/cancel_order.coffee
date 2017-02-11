@@ -1,13 +1,5 @@
-OneBroker = require "../src/client"
-api_key   = require "../_key"
-
-if not api_key
-
-  console.log "Can't test without API_KEY !"
-  console.log "Please update /_key.coffee with your key"
-  return
-
-client = OneBroker( api_key )
+OneBroker = require '../src/client'
+client    = OneBroker( require "../_key" )
 
 callback = ( error, response ) ->
 

@@ -1,12 +1,12 @@
-_      = require 'lodash'
+_ = require 'lodash'
 
 default_config = require './config'
 
 module.exports = ( api_key, referral_id ) ->
 
   if not api_key
-    console.error "Error: api_key is required to do 1broker API calls"
-    return null
+    console.warn "Warning: api_key is required in order to call 1Broker's API"
+    return
 
   config = _.defaults { api_key, referral_id }, default_config
 
@@ -21,29 +21,35 @@ module.exports = ( api_key, referral_id ) ->
       details                : api 'user/details'
       overview               : api 'user/overview'
       bitcoin_deposit_address: api 'user/bitcoin_deposit_address'
-
-    market   :
-      details                : api 'market/details'
-      bars                   : api 'market/bars'
-      list                   : api 'market/list'
-      quotes                 : api 'market/quotes'
+      transaction_log        : api 'user/transaction_log'
+      quota_status           : api 'user/quota_status'
 
     order    :
-      cancel                 : api 'order/cancel'
+      open                   : api 'order/open'
       create                 : api 'order/create'
-      list_open              : api 'order/open'
+      cancel                 : api 'order/cancel'
 
     position :
-      edit                   : api 'position/edit'
-      history                : api 'position/history'
       open                   : api 'position/open'
+      edit                   : api 'position/edit'
       close                  : api 'position/close'
       close_cancel           : api 'position/close_cancel'
+      history                : api 'position/history'
+
+    market   :
+      categories             : api 'market/categories'
+      list                   : api 'market/list'
+      details                : api 'market/details'
+      quotes                 : api 'market/quotes'
+      bars                   : api 'market/bars'
+      ticks                  : api 'market/ticks'
+
 
     # borrow info from module itself
-    info : module.exports.info
-    add  : module.exports.add
-    get  : module.exports.get
+    info      : module.exports.info
+    add       : module.exports.add
+    get       : module.exports.get
+    calculate : module.exports.calculate
 
   # for each helper method we will create a function that receives
   # the client as first parameter, same we did with the API methods
@@ -71,3 +77,5 @@ module.exports.add =
 module.exports.get =
   points     : require './helpers/get/points'
   percentage : require './helpers/get/percentage'
+
+module.exports.calculate = require './helpers/calculate'

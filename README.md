@@ -116,11 +116,11 @@ $ npm install
 $ cd examples
 ```
 
- - Edit [_key file](https://github.com/flyingunicorn222/1broker-client/blob/v1/examples/_key.coffee) and add your key between the quotes
+ - Edit [.env file](https://github.com/flyingunicorn222/1broker-client/blob/v1/.env) and update with your key
 
 ```bash
-# _key.coffee
-module.exports ='YOUR_TOKEN_GOES_HERE'
+# .env
+KEY=Ac17f4de5...................b69a
 ```
 
 Now you can run examples, for instance:
@@ -143,23 +143,35 @@ todo
 
 - [x] Simple implementation
 - [x] Examples
+- [x] Tests
+- [x] More Tests
 - [ ] Extra methods ( long, short, close, reverse, [...] )
 - [ ] Documentation
-- [ ] Tests
 - [ ] Parameters validation
 - [ ] Please [create an issue](https://github.com/flyingunicorn222/1broker-client/issues/new) if you need something else
 
 contributing
 ====
+
+coding
+=====
 The source code is also pretty simple and self explainatory so feel free
 to edit and submit a pull request.
 
+reports and requests
+=====
 In case you find an issue, have a request or recommendation feel free to [open
 an issue](https://github.com/flyingunicorn222/1broker-client/issues/new), it will be highly appreciated.
 
+donate
+=====
 You can also [donate to support this library and more freebies!](https://blockchain.info/address/1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx)
+a few happy users already donated and shown their love!
 
 **BTC** [*1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx*](https://blockchain.info/address/1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx)
+
+get in touch
+====
 
 Feel free to send me a message on reddit, I'm [flyingunicorn222](https://www.reddit.com/user/flyingunicorn222)
 
@@ -167,9 +179,13 @@ Thank You!
 
 disclaimer
 ====
- - By default when creating an order this library will use my referral_id,
-which means I'll receive a small amount of BTC from [1broker](https://1broker.com/?c=en/action/r&i=11468)
-when you create an order! It would be great if you could keep it this way! If you don't agree update the value on the config file.
+ - This isn't an official [1Broker](https://1broker.com/?r=11468), they are well aware and cleared all questions and gave great support!
 
- - [1broker](https://1broker.com/?c=en/action/r&i=11468) links on this documentation
-also constains my referral link
+ - This library not only implement all current API methods but also add extra features, check folder /helpers to understand it better
+
+ - By default when creating an order this library will use my referral_id,
+which means I'll receive a small amount of BTC from [1Broker](https://1broker.com/?r=11468)
+when you create an order! Please keep it this way so i can keep working on improving and impressing with this library!
+
+ - [1broker](https://1broker.com/?r=11468) links on this documentation
+constains my referral link
