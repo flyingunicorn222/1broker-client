@@ -160,8 +160,7 @@ to edit and submit a pull request.
 
 **reports and requests**
 
-In case you find an issue, have a request or recommendation feel free to [open
-an issue](https://github.com/flyingunicorn222/1broker-client/issues/new), it will be highly appreciated.
+[Please open an issue!](https://github.com/flyingunicorn222/1broker-client/issues/new), it will be highly appreciated.
 
 **donate**
 
