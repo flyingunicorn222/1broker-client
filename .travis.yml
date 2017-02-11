@@ -1,0 +1,5 @@
+script: make test
+install: npm install
+language: node_js
+node_js:
+  - 0.11.xm

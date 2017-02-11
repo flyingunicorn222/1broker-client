@@ -24,4 +24,7 @@ publish:
 	npm publish
 
 test:
+	$(MOCHA) test/*.coffee
+
+auto.test:
 	$(NODEMON) --watch test --watch src -e coffee --exec "$(MOCHA) test/*.coffee"
