@@ -154,18 +154,21 @@ contributing
 ====
 
 **coding**
+
 The source code is also pretty simple and self explainatory so feel free
 to edit and submit a pull request.
 
 **reports and requests**
+
 In case you find an issue, have a request or recommendation feel free to [open
 an issue](https://github.com/flyingunicorn222/1broker-client/issues/new), it will be highly appreciated.
 
 **donate**
+
 You can [donate to support this library and more freebies!](https://blockchain.info/address/1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx)
 a few happy users already donated and shown their love, the helped is much appreciated and needed as a lot of work is being invested on this library!
 
-**BTC** [*1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx*](https://blockchain.info/address/1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx)
+**BTC:** [*1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx*](https://blockchain.info/address/1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx)
 
 get in touch
 ====
