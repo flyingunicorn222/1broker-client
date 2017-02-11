@@ -153,20 +153,17 @@ todo
 contributing
 ====
 
-coding
-=====
+**coding**
 The source code is also pretty simple and self explainatory so feel free
 to edit and submit a pull request.
 
-reports and requests
-=====
+**reports and requests**
 In case you find an issue, have a request or recommendation feel free to [open
 an issue](https://github.com/flyingunicorn222/1broker-client/issues/new), it will be highly appreciated.
 
-donate
-=====
-You can also [donate to support this library and more freebies!](https://blockchain.info/address/1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx)
-a few happy users already donated and shown their love!
+**donate**
+You can [donate to support this library and more freebies!](https://blockchain.info/address/1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx)
+a few happy users already donated and shown their love, the helped is much appreciated and needed as a lot of work is being invested on this library!
 
 **BTC** [*1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx*](https://blockchain.info/address/1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx)
 
@@ -179,13 +176,13 @@ Thank You!
 
 disclaimer
 ====
- - This isn't an official [1Broker](https://1broker.com/?r=11468), they are well aware and cleared all questions and gave great support!
+ - Altough this isn't an official [1Broker](https://1broker.com/?r=11468) client, they provided great support and cleared all questions, very kind guys!
 
- - This library not only implement all current API methods but also add extra features, check folder /helpers to understand it better
+ - The goal of this library is not only implement all current API methods but also add extra features, most of the extras are on the /helpers folder
 
  - By default when creating an order this library will use my referral_id,
-which means I'll receive a small amount of BTC from [1Broker](https://1broker.com/?r=11468)
+that means I'll receive a small amount of BTC from [1Broker](https://1broker.com/?r=11468)
 when you create an order! Please keep it this way so i can keep working on improving and impressing with this library!
 
  - [1broker](https://1broker.com/?r=11468) links on this documentation
-constains my referral link
+constains my referral link, in case you still don't have an account please use those links to create it.

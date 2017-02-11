@@ -17,10 +17,11 @@ module.exports = ( symbol, leverage, price, direction, stop_loss, take_profit ) 
 
   params = {}
 
-  if typeof leverage is 'number'
+  # is it a number?
+  if !isNaN leverage
 
     if leverage > max_leverage
-      console.warn "Leverage #{leverage} is too high for #{symbol}"
+      console.warn " - Leverage #{leverage} is too high for #{symbol}"
       console.warn "using #{max_leverage} instead"
 
       leverage = max_leverage
