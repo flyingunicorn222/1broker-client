@@ -1,13 +1,13 @@
 1Broker-client [![Build Status](https://travis-ci.org/flyingunicorn222/1broker-client.png)](https://travis-ci.org/flyingunicorn222/1broker-client)
 ===
 
-####This is a node.js wrapper for [1Broker's API](https://1broker.com/?c=en/action/r&i=11468), this package is mainly used and maintaned by [@telebroker_bot](https://t.me/telebroker_bot) an incredible bot to open orders and manage trades directly from [Telegram](https://telegram.org/) !!!
+####This is a node.js wrapper for [1Broker's API](https://1broker.com/?r=11468), this package is mainly used and maintaned by [@telebroker_bot](https://t.me/telebroker_bot) an incredible bot to open orders and manage trades directly from [Telegram](https://telegram.org/) !!!
 
 ####Join us at [1Broker Trollbox](https://t.me/Trollbox_1Broker) for some trades and trolling, feel free to use the group to ask anything about the bot, this library, 1Broker or even about the markets!
 1Broker-client [![Build Status](https://travis-ci.org/flyingunicorn222/1broker-client.png)](https://travis-ci.org/flyingunicorn222/1broker-client)
 ===
 
-####This is a node.js wrapper for [1Broker's API](https://1broker.com/?c=en/action/r&i=11468), this package is mainly used and maintaned by [@telebroker_bot](https://t.me/telebroker_bot) an incredible bot to open orders and manage trades directly from [Telegram](https://telegram.org/) !!!
+####This is a node.js wrapper for [1Broker's API](https://1broker.com/?r=11468), this package is mainly used and maintaned by [@telebroker_bot](https://t.me/telebroker_bot) an incredible bot to open orders and manage trades directly from [Telegram](https://telegram.org/) !!!
 
 ####Join us at [1Broker Trollbox](https://t.me/Trollbox_1Broker) for some trades and trolling, feel free to use the group to ask anything about the bot, this library, 1Broker or even about the markets!
 --
@@ -113,7 +113,7 @@ the % Stop Loss and Take Profit syntax.
 
 Before running the examples you will need:
 
- - [1broker Account](https://1broker.com/?c=en/action/r&i=11468)
+ - [1broker Account](https://1broker.com/?r=11468)
 
  - Api Token ( Create one in [Settings](https://1broker.com/?u1=account_settings) )
 
@@ -313,7 +313,7 @@ the % Stop Loss and Take Profit syntax.
 
 Before running the examples you will need:
 
- - [1broker Account](https://1broker.com/?c=en/action/r&i=11468)
+ - [1broker Account](https://1broker.com/?r=11468)
 
  - Api Token ( Create one in [Settings](https://1broker.com/?u1=account_settings) )
 
