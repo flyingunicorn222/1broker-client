@@ -20,6 +20,8 @@ module.exports = ( symbol, leverage, price, direction, stop_loss, take_profit ) 
   # is it a number?
   if !isNaN leverage
 
+    leverage = Number leverage
+
     if leverage > max_leverage
       console.warn " - Leverage #{leverage} is too high for #{symbol}"
       console.warn "using #{max_leverage} instead"
