@@ -46,6 +46,7 @@ module.exports = ( config, params, callback ) ->
 
     params.take_profit = calculated.take_profit
     params.stop_loss   = calculated.stop_loss
+    params.leverage    = calculated.leverage
 
     return call config, 'order/create', params, callback
 
