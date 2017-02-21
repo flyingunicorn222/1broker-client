@@ -182,7 +182,7 @@ a few happy users already donated and shown their love, the helped is much appre
 
 **BTC:** [*1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx*](https://blockchain.info/address/1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx)
 
-![Thanks!](/docs/1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx.png)
+![Thanks!](https://raw.githubusercontent.com/flyingunicorn222/1broker-client/v2/docs/1AsB6GtqUjHrLRXBzA19RMYyD7G9aVARbx.png)
 
 get in touch
 ====
