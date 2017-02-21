@@ -15,6 +15,8 @@ module.exports = ( symbol, leverage, price, direction, stop_loss, take_profit ) 
   stop_loss   = stop_loss   || ""
   take_profit = take_profit || ""
 
+  leverage = leverage || 1
+
   params = {}
 
   # is it a number?

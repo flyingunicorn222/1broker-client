@@ -38,15 +38,21 @@ module.exports = ( config, params, callback ) ->
   # if not using or using absolute values for SL / TP
   if not needs_quote
 
+    calculated = calculate params.symbol, params.leverage, price, params.direction, params.stop_loss, params.take_profit
+
+    if calculated.take_profit then params.take_profit = calculated.take_profit
+    if calculated.stop_loss   then params.stop_loss   = calculated.stop_loss
+    if calculated.leverage    then params.leverage    = calculated.leverage
+
     return call config, 'order/create', params, callback
 
   execute = ( price ) ->
 
     calculated = calculate params.symbol, params.leverage, price, params.direction, params.stop_loss, params.take_profit
 
-    params.take_profit = calculated.take_profit
-    params.stop_loss   = calculated.stop_loss
-    params.leverage    = calculated.leverage
+    if calculated.take_profit then params.take_profit = calculated.take_profit
+    if calculated.stop_loss   then params.stop_loss   = calculated.stop_loss
+    if calculated.leverage    then params.leverage    = calculated.leverage
 
     return call config, 'order/create', params, callback
 

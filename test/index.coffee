@@ -186,6 +186,19 @@ describe '1Broker-client', ->
 
       params.leverage.should.equal 50
 
+    it 'deal with null leverage', ->
+
+      params = client.calculate "eurusd", null, 1, "long", "-200", '20%'
+
+      params.leverage.should.equal 1
+
+    #it 'deal with null take profit', ->
+
+      #params = client.calculate "eurusd", null, 1, "long", "-200", null
+
+      #console.log "take profit ->", params.take_profit
+
+
   # wont test
   if not key
 
