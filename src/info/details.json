@@ -6,7 +6,7 @@
     "category": "CRYPTO",
     "type": "CFD",
     "maximum_leverage": 10,
-    "maximum_amount": 40,
+    "maximum_amount": 0,
     "overnight_charge_long_percent": 0.4615,
     "overnight_charge_short_percent": 0,
     "decimals": 2,
@@ -16,10 +16,6 @@
       "close": "Friday 17:00:00",
       "daily_break_start": null,
       "daily_break_stop": null
-    },
-    "exposure": {
-      "direction": "Long",
-      "percent": "100"
     }
   },
   "SILVER": {
@@ -28,7 +24,7 @@
     "description": "Silver is a metallic chemical element which has the highest electrical conductivity and the highest thermal conductivity of any metal. Silver has long been valued as a precious metal, and it is used as an investment, to make ornaments, jewelry, high-value tableware, utensils, electrical conductors, mirrors and currency coins.",
     "category": "COMMODITY",
     "type": "CFD",
-    "maximum_leverage": 100,
+    "maximum_leverage": 50,
     "maximum_amount": 500,
     "overnight_charge_long_percent": 0.0204,
     "overnight_charge_short_percent": 0.0077,
@@ -66,7 +62,7 @@
     "description": "Gold has been a valuable and highly sought-after precious metal for coinage, jewelry, and other arts long before the beginning of recorded history. Gold standards have been the most common basis for monetary policies throughout human history, being widely supplanted by fiat currency starting in the 1930s.",
     "category": "COMMODITY",
     "type": "CFD",
-    "maximum_leverage": 100,
+    "maximum_leverage": 50,
     "maximum_amount": 500,
     "overnight_charge_long_percent": 0.0204,
     "overnight_charge_short_percent": 0.0077,
@@ -289,22 +285,22 @@
     }
   },
   "YHOO": {
-    "symbol": "YHOO",
-    "name": "Yahoo Inc.",
-    "description": "Yahoo Inc. (Simply as Yahoo!,styled as YAHOO!) is an American multinational technology company headquartered in Sunnyvale, California. It is globally known for its Web portal, search engine Yahoo! Search, and related services, including Yahoo! Directory, Yahoo! Mail, Yahoo! News, Yahoo! Finance, Yahoo! Groups, Yahoo! Answers, advertising, online mapping, video sharing, fantasy sports and its social media website.",
-    "category": "STOCK",
-    "type": "STOCK",
-    "maximum_leverage": 15,
-    "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.02,
-    "overnight_charge_short_percent": 0.0077,
-    "decimals": 3,
+    "symbol": null,
+    "name": null,
+    "description": null,
+    "category": null,
+    "type": null,
+    "maximum_leverage": 0,
+    "maximum_amount": 0,
+    "overnight_charge_long_percent": 0,
+    "overnight_charge_short_percent": 0,
+    "decimals": 0,
     "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Monday 09:30:00",
-      "close": "Friday 16:00:00",
-      "daily_break_start": "16:00:00",
-      "daily_break_stop": "09:30:00"
+      "timezone": null,
+      "open": " ",
+      "close": " ",
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "WU": {
@@ -613,7 +609,7 @@
   },
   "C": {
     "symbol": "C",
-    "name": "Citigroup Inc.",
+    "name": "Citigroup, Inc.",
     "description": "Citigroup Inc. or Citi is an American multinational investment banking and financial services corporation headquartered in Manhattan, New York City. It is one of the largest bank holding company in the US by assets.",
     "category": "STOCK",
     "type": "STOCK",
@@ -738,10 +734,10 @@
     "decimals": 3,
     "market_hours": {
       "timezone": "Europe/Moscow",
-      "open": "Monday 09:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "09:00:00"
+      "open": "Monday 10:00:00",
+      "close": "Friday 19:00:00",
+      "daily_break_start": "19:00:00",
+      "daily_break_stop": "10:00:00"
     }
   },
   "USDMXN": {
@@ -757,10 +753,10 @@
     "decimals": 4,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "USDJPY": {
@@ -776,10 +772,10 @@
     "decimals": 3,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "USDCNH": {
@@ -795,10 +791,10 @@
     "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "USDCHF": {
@@ -814,10 +810,10 @@
     "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "USDCAD": {
@@ -833,10 +829,10 @@
     "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "NZDUSD": {
@@ -852,10 +848,10 @@
     "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "GBPUSD": {
@@ -871,10 +867,10 @@
     "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "EURUSD": {
@@ -890,10 +886,10 @@
     "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "EURSEK": {
@@ -909,10 +905,10 @@
     "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "EURNOK": {
@@ -928,10 +924,10 @@
     "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "EURJPY": {
@@ -947,10 +943,10 @@
     "decimals": 3,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "EURGBP": {
@@ -966,10 +962,10 @@
     "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "EURCHF": {
@@ -985,10 +981,10 @@
     "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "AUDUSD": {
@@ -1004,10 +1000,10 @@
     "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   },
   "AUDNZD": {
@@ -1023,10 +1019,10 @@
     "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
-      "open": "Sunday 17:15:00",
+      "open": "Sunday 17:00:00",
       "close": "Friday 17:00:00",
-      "daily_break_start": "17:00:00",
-      "daily_break_stop": "17:15:00"
+      "daily_break_start": null,
+      "daily_break_stop": null
     }
   }
 }
