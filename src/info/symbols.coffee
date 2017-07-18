@@ -41,7 +41,6 @@ symbols =
     "V"
     "VOW3"
     "WU"
-    "YHOO"
   ]
 
   indexes: [
