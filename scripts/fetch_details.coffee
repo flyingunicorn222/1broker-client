@@ -8,52 +8,57 @@ fs     = require 'fs'
 key    = require '../_key'
 Client = require '../src/client'
 
+get_symbols = require './get_symbols'
+
 client = new Client key
 
-symbols = client.info.symbols.all
-details = {}
+get_symbols().then ( symbols ) ->
 
-end = ->
-  details = JSON.stringify( details, null, 2 )
+  console.log 'got symbols!', symbols
 
-  path = __dirname + "/../src/info/details.json"
+  details = {}
 
-  fs.writeFileSync( path, details )
+  end = ->
+    details = JSON.stringify( details, null, 2 )
 
-  console.log 'wrote file ', path
+    path = __dirname + "/../src/info/details.json"
 
-console.log 'Fetching all market details'
+    fs.writeFileSync( path, details )
 
-next = ->
+    console.log 'wrote file ', path
 
-  symbol = symbols.pop()
+  console.log 'Fetching all market details'
 
-  if not symbol
+  next = ->
 
-    end()
+    symbol = symbols.pop()
 
-    return
+    if not symbol
 
-  console.log "Fetching #{symbol} details"
-
-  client.market.details symbol: symbol, ( error, result ) ->
-
-    if error
-
-      console.error 'error fetching details'
-      console.error error
+      end()
 
       return
 
-    d = result.response
+    console.log "Fetching #{symbol} details"
 
-    d.maximum_leverage               = Number d.maximum_leverage
-    d.maximum_amount                 = Number d.maximum_amount
-    d.overnight_charge_long_percent  = Number d.overnight_charge_long_percent
-    d.overnight_charge_short_percent = Number d.overnight_charge_short_percent
-    d.decimals                       = Number d.decimals
+    client.market.details symbol: symbol, ( error, result ) ->
 
-    details[ symbol ] = d
-    next()
+      if error
 
-next()
+        console.error 'error fetching details'
+        console.error error
+
+        return
+
+      d = result.response
+
+      d.maximum_leverage               = Number d.maximum_leverage
+      d.maximum_amount                 = Number d.maximum_amount
+      d.overnight_charge_long_percent  = Number d.overnight_charge_long_percent
+      d.overnight_charge_short_percent = Number d.overnight_charge_short_percent
+      d.decimals                       = Number d.decimals
+
+      details[ symbol ] = d
+      next()
+
+  next()

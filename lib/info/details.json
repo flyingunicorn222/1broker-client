@@ -284,25 +284,6 @@
       "daily_break_stop": "09:00:00"
     }
   },
-  "YHOO": {
-    "symbol": null,
-    "name": null,
-    "description": null,
-    "category": null,
-    "type": null,
-    "maximum_leverage": 0,
-    "maximum_amount": 0,
-    "overnight_charge_long_percent": 0,
-    "overnight_charge_short_percent": 0,
-    "decimals": 0,
-    "market_hours": {
-      "timezone": null,
-      "open": " ",
-      "close": " ",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
   "WU": {
     "symbol": "WU",
     "name": "Western Union",
