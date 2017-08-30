@@ -18,6 +18,348 @@
       "daily_break_stop": null
     }
   },
+  "USDTRY": {
+    "symbol": "USDTRY",
+    "name": "USD/TRY",
+    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America and the Turkish lira, the currency of Turkey and the Turkish Republic of Northern Cyprus.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "USDRUB": {
+    "symbol": "USDRUB",
+    "name": "USD/RUB",
+    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America and the ruble (code: RUB), the official currency of Russia and the two partially recognized republics of Abkhazia and South Ossetia.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "Europe/Moscow",
+      "open": "Monday 10:00:00",
+      "close": "Friday 19:00:00",
+      "daily_break_start": "19:00:00",
+      "daily_break_stop": "10:00:00"
+    }
+  },
+  "USDMXN": {
+    "symbol": "USDMXN",
+    "name": "USD/MXN",
+    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America and the Mexican peso, the currency of Mexico.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 50,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 4,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "USDJPY": {
+    "symbol": "USDJPY",
+    "name": "USD/JPY",
+    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America and the Japanese yen (code: JPY), the official currency of Japan.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 200,
+    "maximum_amount": 2000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "USDCNH": {
+    "symbol": "USDCNH",
+    "name": "USD/CNH",
+    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America and the renminbi is the official currency of the People's Republic of China. The yuan is the basic unit of the renminbi.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 50,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "USDCHF": {
+    "symbol": "USDCHF",
+    "name": "USD/CHF",
+    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America and the franc (code: CHF), the currency and legal tender of Switzerland and Liechtenstein.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 75,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "USDCAD": {
+    "symbol": "USDCAD",
+    "name": "USD/CAD",
+    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America, and the Canadian dollar, the official currency of Canada.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 200,
+    "maximum_amount": 2000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "NZDUSD": {
+    "symbol": "NZDUSD",
+    "name": "NZD/USD",
+    "description": "This is the exchange rate between the New Zealand dollar, the currency of the Realm of New Zealand, and the U.S. dollar, the official currency of the United States of America.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 100,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "GBPUSD": {
+    "symbol": "GBPUSD",
+    "name": "GBP/USD",
+    "description": "This is the exchange rate between the pound sterling (code: GBP), the official currency of the United Kingdom, and the U.S. Dollar, the official currency of the United States of America.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 100,
+    "maximum_amount": 2000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "EURUSD": {
+    "symbol": "EURUSD",
+    "name": "EUR/USD",
+    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the U.S. dollar, the official currency of the United States of America.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 200,
+    "maximum_amount": 2000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "EURTRY": {
+    "symbol": "EURTRY",
+    "name": "EUR/TRY",
+    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the Turkish lira, the currency of Turkey and the Turkish Republic of Northern Cyprus.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "EURSEK": {
+    "symbol": "EURSEK",
+    "name": "EUR/SEK",
+    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the krona, the official currency of Sweden.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 50,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "EURNOK": {
+    "symbol": "EURNOK",
+    "name": "EUR/NOK",
+    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the krone, the currency of Norway and its dependent territories.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 50,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "EURJPY": {
+    "symbol": "EURJPY",
+    "name": "EUR/JPY",
+    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the Japanese yen (code: JPY), the official currency of Japan.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 200,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "EURGBP": {
+    "symbol": "EURGBP",
+    "name": "EUR/GBP",
+    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the pound sterling (code: GBP), the official currency of the United Kingdom.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 100,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "EURCHF": {
+    "symbol": "EURCHF",
+    "name": "EUR/CHF",
+    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the franc (code: CHF), the currency and legal tender of Switzerland and Liechtenstein.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 75,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "AUDUSD": {
+    "symbol": "AUDUSD",
+    "name": "AUD/USD",
+    "description": "This is the exchange rate between the Australian dollar, the currency of the Commonwealth of Australia, and the U.S. dollar, the official currency of the United States of America.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 100,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "AUDNZD": {
+    "symbol": "AUDNZD",
+    "name": "AUD/NZD",
+    "description": "This is the exchange rate between the Australian dollar, the currency of the Commonwealth of Australia, and the New Zealand dollar, the currency of the Realm of New Zealand.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 100,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
   "SILVER": {
     "symbol": "SILVER",
     "name": "Silver 1 oz",
@@ -73,215 +415,6 @@
       "close": "Friday 17:00:00",
       "daily_break_start": "17:00:00",
       "daily_break_stop": "18:00:00"
-    }
-  },
-  "UK100": {
-    "symbol": "UK100",
-    "name": "FTSE 100",
-    "description": "This benchmark is maintained by the FTSE Group, a subsidiary of the London Stock Exchange and reflects the share prices of British Blue Chips. It indexes the 100 companies with the highest market capitalization.",
-    "category": "INDEX",
-    "type": "CFD",
-    "maximum_leverage": 20,
-    "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.02,
-    "overnight_charge_short_percent": 0.0077,
-    "decimals": 2,
-    "market_hours": {
-      "timezone": "Europe/London",
-      "open": "Monday 08:00:00",
-      "close": "Friday 21:00:00",
-      "daily_break_start": "21:00:00",
-      "daily_break_stop": "08:00:00"
-    }
-  },
-  "SP500": {
-    "symbol": "SP500",
-    "name": "S&P 500",
-    "description": "The S&P 500, is a stock market index based on the common stock prices of 500 top publicly traded American companies, as determined by S&P. It is one of the most commonly followed indices and many consider it the best representation of the market and a bellwether for the U.S. economy.",
-    "category": "INDEX",
-    "type": "CFD",
-    "maximum_leverage": 20,
-    "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.02,
-    "overnight_charge_short_percent": 0.0077,
-    "decimals": 2,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Monday 03:00:00",
-      "close": "Friday 16:00:00",
-      "daily_break_start": "16:00:00",
-      "daily_break_stop": "03:00:00"
-    }
-  },
-  "NDX": {
-    "symbol": "NDX",
-    "name": "NASDAQ 100",
-    "description": "The NASDAQ-100 is a stock market index made up of 107 equity securities issued by 100 of the largest non-financial companies listed on the NASDAQ. It is a modified capitalization-weighted index.",
-    "category": "INDEX",
-    "type": "CFD",
-    "maximum_leverage": 20,
-    "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.02,
-    "overnight_charge_short_percent": 0.0077,
-    "decimals": 2,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Monday 03:00:00",
-      "close": "Friday 16:00:00",
-      "daily_break_start": "16:00:00",
-      "daily_break_stop": "03:00:00"
-    }
-  },
-  "JP225": {
-    "symbol": "JP225",
-    "name": "Nikkei 225",
-    "description": "The Nikkei 225 is a stock market index for the Tokyo Stock Exchange (TSE). It has been calculated daily by the Nihon Keizai Shimbun (Nikkei) newspaper since 1950. It is a price-weighted index (the unit is yen), and the components are reviewed once a year.",
-    "category": "INDEX",
-    "type": "CFD",
-    "maximum_leverage": 20,
-    "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.02,
-    "overnight_charge_short_percent": 0.0077,
-    "decimals": 2,
-    "market_hours": {
-      "timezone": "Asia/Tokyo",
-      "open": "Monday 09:00:00",
-      "close": "Friday 15:00:00",
-      "daily_break_start": "15:00:00",
-      "daily_break_stop": "09:00:00"
-    }
-  },
-  "HK50": {
-    "symbol": "HK50",
-    "name": "Hong Kong 50",
-    "description": "Hong Kong 50 is a freefloat-adjusted market capitalization-weighted stock market index in Hong Kong. It is used to record and monitor daily changes of the largest companies of the Hong Kong stock market and is the main indicator of the overall market performance in Hong Kong.",
-    "category": "INDEX",
-    "type": "CFD",
-    "maximum_leverage": 20,
-    "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.02,
-    "overnight_charge_short_percent": 0.0077,
-    "decimals": 2,
-    "market_hours": {
-      "timezone": "Asia/Hong_Kong",
-      "open": "Monday 09:30:00",
-      "close": "Friday 16:00:00",
-      "daily_break_start": "16:00:00",
-      "daily_break_stop": "09:30:00"
-    }
-  },
-  "EU50": {
-    "symbol": "EU50",
-    "name": "Euro Stoxx 50",
-    "description": "The EURO STOXX 50 is a stock index of Eurozone stocks designed by STOXX, an index provider owned by Deutsche Börse Group and SIX Group. According to STOXX, its goal is \"to provide a blue-chip representation of Supersector leaders in the Eurozone\". It is made up of fifty of the largest and most liquid stocks.",
-    "category": "INDEX",
-    "type": "CFD",
-    "maximum_leverage": 20,
-    "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.02,
-    "overnight_charge_short_percent": 0.0077,
-    "decimals": 2,
-    "market_hours": {
-      "timezone": "Europe/Berlin",
-      "open": "Monday 09:00:00",
-      "close": "Friday 22:00:00",
-      "daily_break_start": "22:00:00",
-      "daily_break_stop": "09:00:00"
-    }
-  },
-  "DOW": {
-    "symbol": "DOW",
-    "name": "Dow Jones 30 Industrial",
-    "description": "The Dow Jones Industrial Average is a stock market index. It shows how 30 large, publicly owned companies based in the United States have traded during a standard trading session in the stock market.",
-    "category": "INDEX",
-    "type": "CFD",
-    "maximum_leverage": 20,
-    "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.02,
-    "overnight_charge_short_percent": 0.0077,
-    "decimals": 2,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Monday 03:00:00",
-      "close": "Friday 16:00:00",
-      "daily_break_start": "16:00:00",
-      "daily_break_stop": "03:00:00"
-    }
-  },
-  "DAX": {
-    "symbol": "DAX",
-    "name": "DAX (German 30)",
-    "description": "The DAX is a blue chip stock market index consisting of the 30 major German companies trading on the Frankfurt Stock Exchange. The Base date for the DAX is 30 December 1987 and it was started from a base value of 1,000. The Xetra system calculates the index after every 1 second since January 1, 2006.",
-    "category": "INDEX",
-    "type": "CFD",
-    "maximum_leverage": 20,
-    "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.02,
-    "overnight_charge_short_percent": 0.0077,
-    "decimals": 2,
-    "market_hours": {
-      "timezone": "Europe/Berlin",
-      "open": "Monday 09:00:00",
-      "close": "Friday 22:00:00",
-      "daily_break_start": "22:00:00",
-      "daily_break_stop": "09:00:00"
-    }
-  },
-  "CH30": {
-    "symbol": "CH30",
-    "name": "SMI",
-    "description": "The Swiss Market Index is Switzerland's blue-chip stock market index, which makes it the most important in the country. It is made up of 20 of the largest and most liquid Swiss Performance Index (SPI) large- and mid-cap stocks.",
-    "category": "INDEX",
-    "type": "CFD",
-    "maximum_leverage": 20,
-    "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.02,
-    "overnight_charge_short_percent": 0.0077,
-    "decimals": 2,
-    "market_hours": {
-      "timezone": "Europe/Berlin",
-      "open": "Monday 09:00:00",
-      "close": "Friday 22:00:00",
-      "daily_break_start": "22:00:00",
-      "daily_break_stop": "09:00:00"
-    }
-  },
-  "AU200": {
-    "symbol": "AU200",
-    "name": "ASX 200",
-    "description": "The S&P/ASX 200 index is a market-capitalization weighted and float-adjusted stock market index of Australian stocks listed on the Australian Securities Exchange from Standard & Poor's. It was started on 31 March 2000 with a value of 3133.3, equal to the value of the All Ordinaries at that date.",
-    "category": "INDEX",
-    "type": "CFD",
-    "maximum_leverage": 20,
-    "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.02,
-    "overnight_charge_short_percent": 0.0077,
-    "decimals": 2,
-    "market_hours": {
-      "timezone": "Australia/Sydney",
-      "open": "Monday 10:00:00",
-      "close": "Friday 16:00:00",
-      "daily_break_start": "16:00:00",
-      "daily_break_stop": "10:00:00"
-    }
-  },
-  "ATX": {
-    "symbol": "ATX",
-    "name": "ATX",
-    "description": "The Austrian Traded Index (ATX) is the most important stock market index of the Wiener Börse and the largest trading place in the Austrian economy. The ATX is, like most European indices, defined as a price index and currently consists of 20 stocks.",
-    "category": "INDEX",
-    "type": "CFD",
-    "maximum_leverage": 20,
-    "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.02,
-    "overnight_charge_short_percent": 0.0077,
-    "decimals": 2,
-    "market_hours": {
-      "timezone": "Europe/Vienna",
-      "open": "Monday 09:00:00",
-      "close": "Friday 17:30:00",
-      "daily_break_start": "17:30:00",
-      "daily_break_stop": "09:00:00"
     }
   },
   "WU": {
@@ -379,10 +512,48 @@
       "daily_break_stop": "09:30:00"
     }
   },
+  "SNAP": {
+    "symbol": "SNAP",
+    "name": "Snap, Inc.",
+    "description": "Snap Inc. is an American multinational technology and social media company, founded on September 16, 2011 by Evan Spiegel and Bobby Murphy and based in Venice, Los Angeles. Its products include Snapchat and Spectacles, as well as the Bitmoji app.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 15,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
   "PEP": {
     "symbol": "PEP",
     "name": "PepsiCo, Inc.",
     "description": "PepsiCo Inc. is an American multinational food and beverage corporation headquartered in Purchase, New York, United States, with interests in the manufacturing, marketing and distribution of grain-based snack foods, beverages, and other products.  PepsiCo was formed in 1965 with the merger of the Pepsi-Cola Company and Frito-Lay, Inc.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 15,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
+  "NVDA": {
+    "symbol": "NVDA",
+    "name": "NVIDIA Corp.",
+    "description": "Nvidia Corporation is an American technology company based in Santa Clara, California. It designs graphics processing units (GPUs) for the gaming and professional markets, as well as system on a chip units (SoCs) for the mobile computing and automotive market.",
     "category": "STOCK",
     "type": "STOCK",
     "maximum_leverage": 15,
@@ -683,6 +854,25 @@
       "daily_break_stop": "09:30:00"
     }
   },
+  "AMD": {
+    "symbol": "AMD",
+    "name": "Advanced Micro Devices, Inc.",
+    "description": "Advanced Micro Devices, Inc. (AMD) is an American multinational semiconductor company based in Sunnyvale, California, United States. AMD's main products include microprocessors, motherboard chipsets, embedded processors and graphics processors for servers, workstations and personal computers, and embedded systems applications.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 15,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
   "AAPL": {
     "symbol": "AAPL",
     "name": "Apple, Inc.",
@@ -702,308 +892,232 @@
       "daily_break_stop": "09:30:00"
     }
   },
-  "USDRUB": {
-    "symbol": "USDRUB",
-    "name": "USD/RUB",
-    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America and the ruble (code: RUB), the official currency of Russia and the two partially recognized republics of Abkhazia and South Ossetia.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 20,
-    "maximum_amount": 1000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
+  "AABA": {
+    "symbol": "AABA",
+    "name": "Altaba, Inc.",
+    "description": "Altaba Inc. is an investment holding corporation that controls a significant interest in Yahoo! Japan and Alibaba. It was created as a result of Verizon's acquisition of Yahoo! Inc's internet business. The company changed its name to Altaba Inc. on June 16, 2017. Verizon completed the acquisition on June 13, 2017. The Yahoo Inc. ticker symbol YHOO was retired in favor of AABA on June 19, 2017.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 15,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
     "decimals": 3,
     "market_hours": {
-      "timezone": "Europe/Moscow",
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
+  "UK100": {
+    "symbol": "UK100",
+    "name": "FTSE 100",
+    "description": "This benchmark is maintained by the FTSE Group, a subsidiary of the London Stock Exchange and reflects the share prices of British Blue Chips. It indexes the 100 companies with the highest market capitalization.",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "Europe/London",
+      "open": "Monday 08:00:00",
+      "close": "Friday 21:00:00",
+      "daily_break_start": "21:00:00",
+      "daily_break_stop": "08:00:00"
+    }
+  },
+  "SP500": {
+    "symbol": "SP500",
+    "name": "S&P 500",
+    "description": "The S&P 500, is a stock market index based on the common stock prices of 500 top publicly traded American companies, as determined by S&P. It is one of the most commonly followed indices and many consider it the best representation of the market and a bellwether for the U.S. economy.",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 03:00:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "03:00:00"
+    }
+  },
+  "NDX": {
+    "symbol": "NDX",
+    "name": "NASDAQ 100",
+    "description": "The NASDAQ-100 is a stock market index made up of 107 equity securities issued by 100 of the largest non-financial companies listed on the NASDAQ. It is a modified capitalization-weighted index.",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 03:00:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "03:00:00"
+    }
+  },
+  "JP225": {
+    "symbol": "JP225",
+    "name": "Nikkei 225",
+    "description": "The Nikkei 225 is a stock market index for the Tokyo Stock Exchange (TSE). It has been calculated daily by the Nihon Keizai Shimbun (Nikkei) newspaper since 1950. It is a price-weighted index (the unit is yen), and the components are reviewed once a year.",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "Asia/Tokyo",
+      "open": "Monday 09:00:00",
+      "close": "Friday 15:00:00",
+      "daily_break_start": "15:00:00",
+      "daily_break_stop": "09:00:00"
+    }
+  },
+  "HK50": {
+    "symbol": "HK50",
+    "name": "Hong Kong 50",
+    "description": "Hong Kong 50 is a freefloat-adjusted market capitalization-weighted stock market index in Hong Kong. It is used to record and monitor daily changes of the largest companies of the Hong Kong stock market and is the main indicator of the overall market performance in Hong Kong.",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "Asia/Hong_Kong",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
+  "EU50": {
+    "symbol": "EU50",
+    "name": "Euro Stoxx 50",
+    "description": "The EURO STOXX 50 is a stock index of Eurozone stocks designed by STOXX, an index provider owned by Deutsche Börse Group and SIX Group. According to STOXX, its goal is \"to provide a blue-chip representation of Supersector leaders in the Eurozone\". It is made up of fifty of the largest and most liquid stocks.",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "Europe/Berlin",
+      "open": "Monday 09:00:00",
+      "close": "Friday 22:00:00",
+      "daily_break_start": "22:00:00",
+      "daily_break_stop": "09:00:00"
+    }
+  },
+  "DOW": {
+    "symbol": "DOW",
+    "name": "Dow Jones 30 Industrial",
+    "description": "The Dow Jones Industrial Average is a stock market index. It shows how 30 large, publicly owned companies based in the United States have traded during a standard trading session in the stock market.",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 03:00:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "03:00:00"
+    }
+  },
+  "DAX": {
+    "symbol": "DAX",
+    "name": "DAX (German 30)",
+    "description": "The DAX is a blue chip stock market index consisting of the 30 major German companies trading on the Frankfurt Stock Exchange. The Base date for the DAX is 30 December 1987 and it was started from a base value of 1,000. The Xetra system calculates the index after every 1 second since January 1, 2006.",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "Europe/Berlin",
+      "open": "Monday 09:00:00",
+      "close": "Friday 22:00:00",
+      "daily_break_start": "22:00:00",
+      "daily_break_stop": "09:00:00"
+    }
+  },
+  "CH30": {
+    "symbol": "CH30",
+    "name": "SMI",
+    "description": "The Swiss Market Index is Switzerland's blue-chip stock market index, which makes it the most important in the country. It is made up of 20 of the largest and most liquid Swiss Performance Index (SPI) large- and mid-cap stocks.",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "Europe/Berlin",
+      "open": "Monday 09:00:00",
+      "close": "Friday 22:00:00",
+      "daily_break_start": "22:00:00",
+      "daily_break_stop": "09:00:00"
+    }
+  },
+  "AU200": {
+    "symbol": "AU200",
+    "name": "ASX 200",
+    "description": "The S&P/ASX 200 index is a market-capitalization weighted and float-adjusted stock market index of Australian stocks listed on the Australian Securities Exchange from Standard & Poor's. It was started on 31 March 2000 with a value of 3133.3, equal to the value of the All Ordinaries at that date.",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "Australia/Sydney",
       "open": "Monday 10:00:00",
-      "close": "Friday 19:00:00",
-      "daily_break_start": "19:00:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
       "daily_break_stop": "10:00:00"
     }
   },
-  "USDMXN": {
-    "symbol": "USDMXN",
-    "name": "USD/MXN",
-    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America and the Mexican peso, the currency of Mexico.",
-    "category": "FOREX",
+  "ATX": {
+    "symbol": "ATX",
+    "name": "ATX",
+    "description": "The Austrian Traded Index (ATX) is the most important stock market index of the Wiener Börse and the largest trading place in the Austrian economy. The ATX is, like most European indices, defined as a price index and currently consists of 20 stocks.",
+    "category": "INDEX",
     "type": "CFD",
-    "maximum_leverage": 50,
-    "maximum_amount": 1000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 4,
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
     "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "USDJPY": {
-    "symbol": "USDJPY",
-    "name": "USD/JPY",
-    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America and the Japanese yen (code: JPY), the official currency of Japan.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 200,
-    "maximum_amount": 2000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 3,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "USDCNH": {
-    "symbol": "USDCNH",
-    "name": "USD/CNH",
-    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America and the renminbi is the official currency of the People's Republic of China. The yuan is the basic unit of the renminbi.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 50,
-    "maximum_amount": 1000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 5,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "USDCHF": {
-    "symbol": "USDCHF",
-    "name": "USD/CHF",
-    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America and the franc (code: CHF), the currency and legal tender of Switzerland and Liechtenstein.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 75,
-    "maximum_amount": 1000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 5,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "USDCAD": {
-    "symbol": "USDCAD",
-    "name": "USD/CAD",
-    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America, and the Canadian dollar, the official currency of Canada.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 200,
-    "maximum_amount": 2000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 5,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "NZDUSD": {
-    "symbol": "NZDUSD",
-    "name": "NZD/USD",
-    "description": "This is the exchange rate between the New Zealand dollar, the currency of the Realm of New Zealand, and the U.S. dollar, the official currency of the United States of America.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 100,
-    "maximum_amount": 1000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 5,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "GBPUSD": {
-    "symbol": "GBPUSD",
-    "name": "GBP/USD",
-    "description": "This is the exchange rate between the pound sterling (code: GBP), the official currency of the United Kingdom, and the U.S. Dollar, the official currency of the United States of America.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 100,
-    "maximum_amount": 2000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 5,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "EURUSD": {
-    "symbol": "EURUSD",
-    "name": "EUR/USD",
-    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the U.S. dollar, the official currency of the United States of America.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 200,
-    "maximum_amount": 2000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 5,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "EURSEK": {
-    "symbol": "EURSEK",
-    "name": "EUR/SEK",
-    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the krona, the official currency of Sweden.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 50,
-    "maximum_amount": 1000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 5,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "EURNOK": {
-    "symbol": "EURNOK",
-    "name": "EUR/NOK",
-    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the krone, the currency of Norway and its dependent territories.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 50,
-    "maximum_amount": 1000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 5,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "EURJPY": {
-    "symbol": "EURJPY",
-    "name": "EUR/JPY",
-    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the Japanese yen (code: JPY), the official currency of Japan.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 200,
-    "maximum_amount": 1000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 3,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "EURGBP": {
-    "symbol": "EURGBP",
-    "name": "EUR/GBP",
-    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the pound sterling (code: GBP), the official currency of the United Kingdom.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 100,
-    "maximum_amount": 1000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 5,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "EURCHF": {
-    "symbol": "EURCHF",
-    "name": "EUR/CHF",
-    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the franc (code: CHF), the currency and legal tender of Switzerland and Liechtenstein.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 75,
-    "maximum_amount": 1000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 5,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "AUDUSD": {
-    "symbol": "AUDUSD",
-    "name": "AUD/USD",
-    "description": "This is the exchange rate between the Australian dollar, the currency of the Commonwealth of Australia, and the U.S. dollar, the official currency of the United States of America.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 100,
-    "maximum_amount": 1000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 5,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
-    }
-  },
-  "AUDNZD": {
-    "symbol": "AUDNZD",
-    "name": "AUD/NZD",
-    "description": "This is the exchange rate between the Australian dollar, the currency of the Commonwealth of Australia, and the New Zealand dollar, the currency of the Realm of New Zealand.",
-    "category": "FOREX",
-    "type": "CFD",
-    "maximum_leverage": 100,
-    "maximum_amount": 1000,
-    "overnight_charge_long_percent": 0.0154,
-    "overnight_charge_short_percent": 0.0154,
-    "decimals": 5,
-    "market_hours": {
-      "timezone": "America/New_York",
-      "open": "Sunday 17:00:00",
-      "close": "Friday 17:00:00",
-      "daily_break_start": null,
-      "daily_break_stop": null
+      "timezone": "Europe/Vienna",
+      "open": "Monday 09:00:00",
+      "close": "Friday 17:30:00",
+      "daily_break_start": "17:30:00",
+      "daily_break_stop": "09:00:00"
     }
   }
 }

@@ -18,6 +18,25 @@
       "daily_break_stop": null
     }
   },
+  "USDTRY": {
+    "symbol": "USDTRY",
+    "name": "USD/TRY",
+    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America and the Turkish lira, the currency of Turkey and the Turkish Republic of Northern Cyprus.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
   "USDRUB": {
     "symbol": "USDRUB",
     "name": "USD/RUB",
@@ -178,6 +197,25 @@
     "type": "CFD",
     "maximum_leverage": 200,
     "maximum_amount": 2000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "EURTRY": {
+    "symbol": "EURTRY",
+    "name": "EUR/TRY",
+    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the Turkish lira, the currency of Turkey and the Turkish Republic of Northern Cyprus.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 1000,
     "overnight_charge_long_percent": 0.0154,
     "overnight_charge_short_percent": 0.0154,
     "decimals": 5,
