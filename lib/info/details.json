@@ -18,6 +18,25 @@
       "daily_break_stop": null
     }
   },
+  "USDZAR": {
+    "symbol": "USDZAR",
+    "name": "USD/ZAR",
+    "description": "This is the exchange rate between the U.S. Dollar, the official currency of the United States of America and the South African Rand, the official currency of South Africa.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
   "USDTRY": {
     "symbol": "USDTRY",
     "name": "USD/TRY",
@@ -86,6 +105,25 @@
     "overnight_charge_long_percent": 0.0154,
     "overnight_charge_short_percent": 0.0154,
     "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "USDHKD": {
+    "symbol": "USDHKD",
+    "name": "USD/HKD",
+    "description": "This is the exchange rate between the U.S. Dollar, the official currency of the United States of America and the Hong Kong Dollar, the official currency of the Hong Kong Special Administrative Region.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 100,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
       "open": "Sunday 17:00:00",
@@ -310,6 +348,44 @@
     "category": "FOREX",
     "type": "CFD",
     "maximum_leverage": 75,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "EURCAD": {
+    "symbol": "EURCAD",
+    "name": "EUR/CAD",
+    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone and the Canadian Dollar, the official currency of Canada.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 100,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "EURAUD": {
+    "symbol": "EURAUD",
+    "name": "EUR/AUD",
+    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone and the Australian Dollar, the currency of the Commonwealth of Australia.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 100,
     "maximum_amount": 1000,
     "overnight_charge_long_percent": 0.0154,
     "overnight_charge_short_percent": 0.0154,
