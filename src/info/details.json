@@ -512,6 +512,25 @@
       "daily_break_stop": "09:30:00"
     }
   },
+  "WMT": {
+    "symbol": "WMT",
+    "name": "Wal-Mart Stores, Inc.",
+    "description": "Wal-Mart Stores, Inc., doing business as Walmart, is an American multinational retailing corporation that operates as a chain of hypermarkets, discount department stores, and grocery stores. Headquartered in Bentonville, Arkansas, the company was founded by Sam Walton in 1962 and incorporated on October 31, 1969. On January 31, 2017, Walmart had 11,695 stores and clubs in 28 countries, under a total of 63 banners.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
   "VOW3": {
     "symbol": "VOW3",
     "name": "Volkswagen AG",
@@ -854,6 +873,25 @@
       "daily_break_stop": "09:30:00"
     }
   },
+  "BRKB": {
+    "symbol": "BRKB",
+    "name": "Berkshire Hathaway, Inc",
+    "description": "Berkshire Hathaway Inc. is an American multinational conglomerate holding company headquartered in Omaha, Nebraska, United States. The company is known for its control and leadership by Warren Buffett. According to the Forbes Global 2000 list and formula, Berkshire Hathaway is the fourth largest public company in the world, and the 9th largest conglomerate by revenue.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
   "BMW": {
     "symbol": "BMW",
     "name": "BMW AG",
@@ -896,6 +934,44 @@
     "symbol": "BABA",
     "name": "Alibaba Group H. Ltd.",
     "description": "Alibaba Group Holding Limited (NYSE: BABA) is a Chinese e-commerce company that provides consumer-to-consumer, business-to-consumer and business-to-business sales services via web portals. It also provides electronic payment services, a shopping search engine and data-centric cloud computing services.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 15,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
+  "BA": {
+    "symbol": "BA",
+    "name": "The Boeing Company",
+    "description": "The Boeing Company is an American multinational corporation that designs, manufactures, and sells airplanes, rotorcraft, rockets, and satellites worldwide. Boeing is among the largest global aircraft manufacturers; it is the second-largest defense contractor in the world based on 2015 revenue, and is the largest exporter in the United States by dollar value. The Boeing Company's corporate headquarters are located in Chicago.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 15,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
+  "ATVI": {
+    "symbol": "ATVI",
+    "name": "Activision Blizzard, Inc.",
+    "description": "Activision Blizzard, Inc. is an American video game developer. It is headquartered in Santa Monica, California and was founded in 2008. The company's franchises include Call of Duty, Destiny, Skylanders, World of Warcraft, StarCraft, Diablo, Hearthstone, Heroes of the Storm, and Overwatch, King's Candy Crush Saga, Pet Rescue Saga, and Farm Heroes Saga.",
     "category": "STOCK",
     "type": "STOCK",
     "maximum_leverage": 15,
@@ -1082,10 +1158,48 @@
       "daily_break_stop": "09:30:00"
     }
   },
+  "FR40": {
+    "symbol": "FR40",
+    "name": "CAC 40",
+    "description": "The CAC 40 (Cotation Assistée en Continu) is a benchmark French stock market index. The index represents a capitalization-weighted measure of the 40 most significant values among the 100 highest market caps on the Euronext Paris (formerly the Paris Bourse).",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "Europe/Berlin",
+      "open": "Monday 09:00:00",
+      "close": "Friday 22:00:00",
+      "daily_break_start": "22:00:00",
+      "daily_break_stop": "09:00:00"
+    }
+  },
   "EU50": {
     "symbol": "EU50",
     "name": "Euro Stoxx 50",
     "description": "The EURO STOXX 50 is a stock index of Eurozone stocks designed by STOXX, an index provider owned by Deutsche Börse Group and SIX Group. According to STOXX, its goal is \"to provide a blue-chip representation of Supersector leaders in the Eurozone\". It is made up of fifty of the largest and most liquid stocks.",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "Europe/Berlin",
+      "open": "Monday 09:00:00",
+      "close": "Friday 22:00:00",
+      "daily_break_start": "22:00:00",
+      "daily_break_stop": "09:00:00"
+    }
+  },
+  "ES35": {
+    "symbol": "ES35",
+    "name": "IBEX 35",
+    "description": "The IBEX 35 (Índice Bursátil Español, literally Spanish Exchange Index) is the benchmark stock market index of the Bolsa de Madrid, Spain's principal stock exchange. It is a market capitalization weighted index comprising the 35 most liquid Spanish stocks traded in the Madrid Stock Exchange General Index and is reviewed twice annually. It was inaugurated on 14 January 1992, where the base value of 3,000 points lies.",
     "category": "INDEX",
     "type": "CFD",
     "maximum_leverage": 20,
