@@ -18,6 +18,44 @@
       "daily_break_stop": null
     }
   },
+  "USDZAR": {
+    "symbol": "USDZAR",
+    "name": "USD/ZAR",
+    "description": "This is the exchange rate between the U.S. Dollar, the official currency of the United States of America and the South African Rand, the official currency of South Africa.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "USDTRY": {
+    "symbol": "USDTRY",
+    "name": "USD/TRY",
+    "description": "This is the exchange rate between the U.S. dollar, the official currency of the United States of America and the Turkish lira, the currency of Turkey and the Turkish Republic of Northern Cyprus.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
   "USDRUB": {
     "symbol": "USDRUB",
     "name": "USD/RUB",
@@ -67,6 +105,25 @@
     "overnight_charge_long_percent": 0.0154,
     "overnight_charge_short_percent": 0.0154,
     "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "USDHKD": {
+    "symbol": "USDHKD",
+    "name": "USD/HKD",
+    "description": "This is the exchange rate between the U.S. Dollar, the official currency of the United States of America and the Hong Kong Dollar, the official currency of the Hong Kong Special Administrative Region.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 100,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
     "market_hours": {
       "timezone": "America/New_York",
       "open": "Sunday 17:00:00",
@@ -189,6 +246,25 @@
       "daily_break_stop": null
     }
   },
+  "EURTRY": {
+    "symbol": "EURTRY",
+    "name": "EUR/TRY",
+    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone, and the Turkish lira, the currency of Turkey and the Turkish Republic of Northern Cyprus.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
   "EURSEK": {
     "symbol": "EURSEK",
     "name": "EUR/SEK",
@@ -284,6 +360,44 @@
       "daily_break_stop": null
     }
   },
+  "EURCAD": {
+    "symbol": "EURCAD",
+    "name": "EUR/CAD",
+    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone and the Canadian Dollar, the official currency of Canada.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 100,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
+  "EURAUD": {
+    "symbol": "EURAUD",
+    "name": "EUR/AUD",
+    "description": "This is the exchange rate between the Euro, the official currency of the Eurozone and the Australian Dollar, the currency of the Commonwealth of Australia.",
+    "category": "FOREX",
+    "type": "CFD",
+    "maximum_leverage": 100,
+    "maximum_amount": 1000,
+    "overnight_charge_long_percent": 0.0154,
+    "overnight_charge_short_percent": 0.0154,
+    "decimals": 5,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 17:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": null,
+      "daily_break_stop": null
+    }
+  },
   "AUDUSD": {
     "symbol": "AUDUSD",
     "name": "AUD/USD",
@@ -330,7 +444,7 @@
     "type": "CFD",
     "maximum_leverage": 50,
     "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.0204,
+    "overnight_charge_long_percent": 0.02,
     "overnight_charge_short_percent": 0.0077,
     "decimals": 3,
     "market_hours": {
@@ -349,9 +463,47 @@
     "type": "FUTURE",
     "maximum_leverage": 50,
     "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.0204,
+    "overnight_charge_long_percent": 0.02,
     "overnight_charge_short_percent": 0.0077,
     "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 18:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": "17:00:00",
+      "daily_break_stop": "18:00:00"
+    }
+  },
+  "NG": {
+    "symbol": "NG",
+    "name": "Natural Gas",
+    "description": "Natural gas is a naturally occurring hydrocarbon gas mixture consisting primarily of methane. It is formed when layers of decomposing plant and animal matter are exposed to intense heat and pressure under the surface of the Earth over millions of years. The energy that the plants originally obtained from the sun is stored in the form of chemical bonds in the gas.",
+    "category": "COMMODITY",
+    "type": "FUTURE",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 18:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": "17:00:00",
+      "daily_break_stop": "18:00:00"
+    }
+  },
+  "HG": {
+    "symbol": "HG",
+    "name": "Copper",
+    "description": "Copper is a soft, malleable, and ductile metal with very high thermal and electrical conductivity. It is used as a conductor of heat and electricity, as a building material, and as a constituent of various metal alloys, such as sterling silver used in jewelry, cupronickel used to make marine hardware and coins, and constantan used in strain gauges and thermocouples for temperature measurement.",
+    "category": "COMMODITY",
+    "type": "FUTURE",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 4,
     "market_hours": {
       "timezone": "America/New_York",
       "open": "Sunday 18:00:00",
@@ -368,7 +520,7 @@
     "type": "CFD",
     "maximum_leverage": 50,
     "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.0204,
+    "overnight_charge_long_percent": 0.02,
     "overnight_charge_short_percent": 0.0077,
     "decimals": 2,
     "market_hours": {
@@ -386,6 +538,25 @@
     "category": "STOCK",
     "type": "STOCK",
     "maximum_leverage": 15,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
+  "WMT": {
+    "symbol": "WMT",
+    "name": "Wal-Mart Stores, Inc.",
+    "description": "Wal-Mart Stores, Inc., doing business as Walmart, is an American multinational retailing corporation that operates as a chain of hypermarkets, discount department stores, and grocery stores. Headquartered in Bentonville, Arkansas, the company was founded by Sam Walton in 1962 and incorporated on October 31, 1969. On January 31, 2017, Walmart had 11,695 stores and clubs in 28 countries, under a total of 63 banners.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 20,
     "maximum_amount": 500,
     "overnight_charge_long_percent": 0.02,
     "overnight_charge_short_percent": 0.0077,
@@ -424,6 +595,25 @@
     "category": "STOCK",
     "type": "STOCK",
     "maximum_leverage": 15,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
+  "TWX": {
+    "symbol": "TWX",
+    "name": "Time Warner, Inc.",
+    "description": "Time Warner, Inc. is an American multinational mass media and entertainment conglomerate headquartered in New York City. Time Warner was first founded in 1990, with the merger of Time Inc. and Warner Communications. The current company consists largely of the assets of the former Warner Communications (as well as HBO, a Time Inc. subsidiary prior to the merger), and the assets of Turner Broadcasting.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 20,
     "maximum_amount": 500,
     "overnight_charge_long_percent": 0.02,
     "overnight_charge_short_percent": 0.0077,
@@ -491,6 +681,25 @@
       "close": "Friday 16:00:00",
       "daily_break_start": "16:00:00",
       "daily_break_stop": "09:30:00"
+    }
+  },
+  "SIE": {
+    "symbol": "SIE",
+    "name": "Siemens AG",
+    "description": "Siemens AG is a German conglomerate company headquartered in Berlin and Munich and the largest industrial manufacturing company in Europe with branch offices abroad. The principal divisions of the company are Industry, Energy, Healthcare (Siemens Healthineers), and Infrastructure & Cities, which represent the main activities of the company.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "Europe/Berlin",
+      "open": "Monday 09:00:00",
+      "close": "Friday 17:30:00",
+      "daily_break_start": "17:30:00",
+      "daily_break_stop": "09:00:00"
     }
   },
   "PEP": {
@@ -567,6 +776,25 @@
       "close": "Friday 16:00:00",
       "daily_break_start": "16:00:00",
       "daily_break_stop": "09:30:00"
+    }
+  },
+  "LHA": {
+    "symbol": "LHA",
+    "name": "Deutsche Lufthansa AG",
+    "description": "Deutsche Lufthansa AG is the largest German airline and, when combined with its subsidiaries, also the largest airline in Europe, in terms of fleet size, and the second largest airline in terms of passengers carried during 2016. Lufthansa's registered office and corporate headquarters are in Cologne. The main operations base is at Lufthansa's primary hub at Frankfurt Airport.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "Europe/Berlin",
+      "open": "Monday 09:00:00",
+      "close": "Friday 17:30:00",
+      "daily_break_start": "17:30:00",
+      "daily_break_stop": "09:00:00"
     }
   },
   "KO": {
@@ -683,6 +911,25 @@
       "daily_break_stop": "09:30:00"
     }
   },
+  "DIS": {
+    "symbol": "DIS",
+    "name": "The Walt Disney Company",
+    "description": "The Walt Disney Company, commonly known as Disney, is an American diversified multinational mass media and entertainment conglomerate, headquartered at the Walt Disney Studios in Burbank, California. Disney was founded on October 16, 1923 – by brothers Walt Disney and Roy O. Disney – as the Disney Brothers Cartoon Studio, and established itself as a leader in the American animation industry before diversifying into live-action film production, television, and theme parks.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
   "DBK": {
     "symbol": "DBK",
     "name": "Deutsche Bank AG",
@@ -740,6 +987,25 @@
       "daily_break_stop": "09:30:00"
     }
   },
+  "BRKB": {
+    "symbol": "BRKB",
+    "name": "Berkshire Hathaway, Inc",
+    "description": "Berkshire Hathaway Inc. is an American multinational conglomerate holding company headquartered in Omaha, Nebraska, United States. The company is known for its control and leadership by Warren Buffett. According to the Forbes Global 2000 list and formula, Berkshire Hathaway is the fourth largest public company in the world, and the 9th largest conglomerate by revenue.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
   "BMW": {
     "symbol": "BMW",
     "name": "BMW AG",
@@ -782,6 +1048,44 @@
     "symbol": "BABA",
     "name": "Alibaba Group H. Ltd.",
     "description": "Alibaba Group Holding Limited (NYSE: BABA) is a Chinese e-commerce company that provides consumer-to-consumer, business-to-consumer and business-to-business sales services via web portals. It also provides electronic payment services, a shopping search engine and data-centric cloud computing services.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 15,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
+  "BA": {
+    "symbol": "BA",
+    "name": "The Boeing Company",
+    "description": "The Boeing Company is an American multinational corporation that designs, manufactures, and sells airplanes, rotorcraft, rockets, and satellites worldwide. Boeing is among the largest global aircraft manufacturers; it is the second-largest defense contractor in the world based on 2015 revenue, and is the largest exporter in the United States by dollar value. The Boeing Company's corporate headquarters are located in Chicago.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 15,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
+  "ATVI": {
+    "symbol": "ATVI",
+    "name": "Activision Blizzard, Inc.",
+    "description": "Activision Blizzard, Inc. is an American video game developer. It is headquartered in Santa Monica, California and was founded in 2008. The company's franchises include Call of Duty, Destiny, Skylanders, World of Warcraft, StarCraft, Diablo, Hearthstone, Heroes of the Storm, and Overwatch, King's Candy Crush Saga, Pet Rescue Saga, and Farm Heroes Saga.",
     "category": "STOCK",
     "type": "STOCK",
     "maximum_leverage": 15,
@@ -968,10 +1272,48 @@
       "daily_break_stop": "09:30:00"
     }
   },
+  "FR40": {
+    "symbol": "FR40",
+    "name": "CAC 40",
+    "description": "The CAC 40 (Cotation Assistée en Continu) is a benchmark French stock market index. The index represents a capitalization-weighted measure of the 40 most significant values among the 100 highest market caps on the Euronext Paris (formerly the Paris Bourse).",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "Europe/Berlin",
+      "open": "Monday 09:00:00",
+      "close": "Friday 22:00:00",
+      "daily_break_start": "22:00:00",
+      "daily_break_stop": "09:00:00"
+    }
+  },
   "EU50": {
     "symbol": "EU50",
     "name": "Euro Stoxx 50",
     "description": "The EURO STOXX 50 is a stock index of Eurozone stocks designed by STOXX, an index provider owned by Deutsche Börse Group and SIX Group. According to STOXX, its goal is \"to provide a blue-chip representation of Supersector leaders in the Eurozone\". It is made up of fifty of the largest and most liquid stocks.",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "Europe/Berlin",
+      "open": "Monday 09:00:00",
+      "close": "Friday 22:00:00",
+      "daily_break_start": "22:00:00",
+      "daily_break_stop": "09:00:00"
+    }
+  },
+  "ES35": {
+    "symbol": "ES35",
+    "name": "IBEX 35",
+    "description": "The IBEX 35 (Índice Bursátil Español, literally Spanish Exchange Index) is the benchmark stock market index of the Bolsa de Madrid, Spain's principal stock exchange. It is a market capitalization weighted index comprising the 35 most liquid Spanish stocks traded in the Madrid Stock Exchange General Index and is reviewed twice annually. It was inaugurated on 14 January 1992, where the base value of 3,000 points lies.",
     "category": "INDEX",
     "type": "CFD",
     "maximum_leverage": 20,
