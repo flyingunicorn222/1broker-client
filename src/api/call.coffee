@@ -34,22 +34,9 @@ module.exports = ( config, method, params, callback ) ->
     if error
       return callback?( error )
 
-    if response.statusCode isnt 200
-      callback? new Error response
-      return
+    return callback? response if response.statusCode isnt 200
 
     try
-      parsed = JSON.parse( body )
+      callback? null, JSON.parse( body )
     catch e
       return callback?( e )
-
-    if parsed.error
-
-      return callback?( parsed )
-
-    if parsed.warning
-
-      console.log "Got Warning from API, dumping full response"
-      console.log parsed
-
-    callback?( null, parsed )
