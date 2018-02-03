@@ -2,7 +2,7 @@
   "BTCUSD": {
     "symbol": "BTCUSD",
     "name": "BTC/USD",
-    "description": "This is the exchange rate between Bitcoin and the U.S. Dollar. The price is calculated by the (non-volume-weighted) average of the following Bitcoin/U.S. Dollar exchanges: Gemini Trust Company, LLC., Coinbase UK Ltd. (GDAX)\r\nThe rate is periodically calculated every 3-5 seconds. NOTE: This market is in experimental mode.",
+    "description": "This is the exchange rate between Bitcoin and the U.S. Dollar. The price is calculated by the (non-volume-weighted) average of the following Bitcoin/U.S. Dollar exchanges: Gemini Trust Company, LLC., Coinbase UK Ltd. (GDAX)\r\nThe rate is periodically calculated every 3-5 seconds.",
     "category": "CRYPTO",
     "type": "CFD",
     "maximum_leverage": 10,
@@ -444,7 +444,7 @@
     "type": "CFD",
     "maximum_leverage": 50,
     "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.0204,
+    "overnight_charge_long_percent": 0.02,
     "overnight_charge_short_percent": 0.0077,
     "decimals": 3,
     "market_hours": {
@@ -463,9 +463,47 @@
     "type": "FUTURE",
     "maximum_leverage": 50,
     "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.0204,
+    "overnight_charge_long_percent": 0.02,
     "overnight_charge_short_percent": 0.0077,
     "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 18:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": "17:00:00",
+      "daily_break_stop": "18:00:00"
+    }
+  },
+  "NG": {
+    "symbol": "NG",
+    "name": "Natural Gas",
+    "description": "Natural gas is a naturally occurring hydrocarbon gas mixture consisting primarily of methane. It is formed when layers of decomposing plant and animal matter are exposed to intense heat and pressure under the surface of the Earth over millions of years. The energy that the plants originally obtained from the sun is stored in the form of chemical bonds in the gas.",
+    "category": "COMMODITY",
+    "type": "FUTURE",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Sunday 18:00:00",
+      "close": "Friday 17:00:00",
+      "daily_break_start": "17:00:00",
+      "daily_break_stop": "18:00:00"
+    }
+  },
+  "HG": {
+    "symbol": "HG",
+    "name": "Copper",
+    "description": "Copper is a soft, malleable, and ductile metal with very high thermal and electrical conductivity. It is used as a conductor of heat and electricity, as a building material, and as a constituent of various metal alloys, such as sterling silver used in jewelry, cupronickel used to make marine hardware and coins, and constantan used in strain gauges and thermocouples for temperature measurement.",
+    "category": "COMMODITY",
+    "type": "FUTURE",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 4,
     "market_hours": {
       "timezone": "America/New_York",
       "open": "Sunday 18:00:00",
@@ -482,7 +520,7 @@
     "type": "CFD",
     "maximum_leverage": 50,
     "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.0204,
+    "overnight_charge_long_percent": 0.02,
     "overnight_charge_short_percent": 0.0077,
     "decimals": 2,
     "market_hours": {
@@ -569,6 +607,25 @@
       "daily_break_stop": "09:30:00"
     }
   },
+  "TWX": {
+    "symbol": "TWX",
+    "name": "Time Warner, Inc.",
+    "description": "Time Warner, Inc. is an American multinational mass media and entertainment conglomerate headquartered in New York City. Time Warner was first founded in 1990, with the merger of Time Inc. and Warner Communications. The current company consists largely of the assets of the former Warner Communications (as well as HBO, a Time Inc. subsidiary prior to the merger), and the assets of Turner Broadcasting.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
   "TWTR": {
     "symbol": "TWTR",
     "name": "Twitter, Inc.",
@@ -624,6 +681,25 @@
       "close": "Friday 16:00:00",
       "daily_break_start": "16:00:00",
       "daily_break_stop": "09:30:00"
+    }
+  },
+  "SIE": {
+    "symbol": "SIE",
+    "name": "Siemens AG",
+    "description": "Siemens AG is a German conglomerate company headquartered in Berlin and Munich and the largest industrial manufacturing company in Europe with branch offices abroad. The principal divisions of the company are Industry, Energy, Healthcare (Siemens Healthineers), and Infrastructure & Cities, which represent the main activities of the company.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "Europe/Berlin",
+      "open": "Monday 09:00:00",
+      "close": "Friday 17:30:00",
+      "daily_break_start": "17:30:00",
+      "daily_break_stop": "09:00:00"
     }
   },
   "PEP": {
@@ -700,6 +776,25 @@
       "close": "Friday 16:00:00",
       "daily_break_start": "16:00:00",
       "daily_break_stop": "09:30:00"
+    }
+  },
+  "LHA": {
+    "symbol": "LHA",
+    "name": "Deutsche Lufthansa AG",
+    "description": "Deutsche Lufthansa AG is the largest German airline and, when combined with its subsidiaries, also the largest airline in Europe, in terms of fleet size, and the second largest airline in terms of passengers carried during 2016. Lufthansa's registered office and corporate headquarters are in Cologne. The main operations base is at Lufthansa's primary hub at Frankfurt Airport.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "Europe/Berlin",
+      "open": "Monday 09:00:00",
+      "close": "Friday 17:30:00",
+      "daily_break_start": "17:30:00",
+      "daily_break_stop": "09:00:00"
     }
   },
   "KO": {
@@ -804,6 +899,25 @@
     "category": "STOCK",
     "type": "STOCK",
     "maximum_leverage": 15,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
+  "DIS": {
+    "symbol": "DIS",
+    "name": "The Walt Disney Company",
+    "description": "The Walt Disney Company, commonly known as Disney, is an American diversified multinational mass media and entertainment conglomerate, headquartered at the Walt Disney Studios in Burbank, California. Disney was founded on October 16, 1923 – by brothers Walt Disney and Roy O. Disney – as the Disney Brothers Cartoon Studio, and established itself as a leader in the American animation industry before diversifying into live-action film production, television, and theme parks.",
+    "category": "STOCK",
+    "type": "STOCK",
+    "maximum_leverage": 20,
     "maximum_amount": 500,
     "overnight_charge_long_percent": 0.02,
     "overnight_charge_short_percent": 0.0077,
@@ -1289,25 +1403,6 @@
       "close": "Friday 16:00:00",
       "daily_break_start": "16:00:00",
       "daily_break_stop": "10:00:00"
-    }
-  },
-  "ATX": {
-    "symbol": "ATX",
-    "name": "ATX",
-    "description": "The Austrian Traded Index (ATX) is the most important stock market index of the Wiener Börse and the largest trading place in the Austrian economy. The ATX is, like most European indices, defined as a price index and currently consists of 20 stocks.",
-    "category": "INDEX",
-    "type": "CFD",
-    "maximum_leverage": 20,
-    "maximum_amount": 500,
-    "overnight_charge_long_percent": 0.02,
-    "overnight_charge_short_percent": 0.0077,
-    "decimals": 2,
-    "market_hours": {
-      "timezone": "Europe/Vienna",
-      "open": "Monday 09:00:00",
-      "close": "Friday 17:30:00",
-      "daily_break_start": "17:30:00",
-      "daily_break_stop": "09:00:00"
     }
   }
 }

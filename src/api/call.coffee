@@ -35,8 +35,7 @@ module.exports = ( config, method, params, callback ) ->
       return callback?( error )
 
     if response.statusCode isnt 200
-      callback? response
-      return
+      return callback?( response )
 
     try
       parsed = JSON.parse( body )
@@ -48,7 +47,5 @@ module.exports = ( config, method, params, callback ) ->
     if parsed.error
 
       return callback?( parsed )
-
-    if parsed.warning
 
     callback?( null, parsed )
