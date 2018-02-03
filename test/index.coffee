@@ -264,11 +264,11 @@ describe '1Broker-client', ->
 
       client.order.create params, ( error, result ) ->
 
-        should( error ).be.null
+        should( error ).not.be.null
 
         # insufficient funds
-        result.error.should.be.true
-        result.error_code.should.equal 502
+        error.error.should.be.true
+        error.error_code.should.equal 502
 
         done()
 
