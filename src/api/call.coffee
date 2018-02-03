@@ -35,24 +35,20 @@ module.exports = ( config, method, params, callback ) ->
       return callback?( error )
 
     if response.statusCode isnt 200
-      console.log "1broker-client: error, bad statusCode: #{response.statusCode}"
-      callback? new Error response.statusCode
+      callback? response
       return
 
     try
       parsed = JSON.parse( body )
     catch e
-      console.log "error parsing body as json, dumping body"
+      console.log "1broker-client error parsing body as json, dumping body"
       console.log body
       return callback?( e )
 
-    if body.error
+    if parsed.error
 
-      return callback?( body )
+      return callback?( parsed )
 
-    if body.warning
-
-      console.log "Got Warning from API, dumping full response"
-      console.log body
+    if parsed.warning
 
     callback?( null, parsed )

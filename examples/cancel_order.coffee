@@ -14,5 +14,3 @@ params =
   order_id : 941400
 
 client.order.cancel( params, callback )
-
-
