@@ -1404,5 +1404,24 @@
       "daily_break_start": "16:00:00",
       "daily_break_stop": "10:00:00"
     }
+  },
+  "ATX": {
+    "symbol": "ATX",
+    "name": "ATX",
+    "description": "The Austrian Traded Index (ATX) is the most important stock market index of the Wiener Börse and the largest trading place in the Austrian economy. The ATX is, like most European indices, defined as a price index and currently consists of 20 stocks.",
+    "category": "INDEX",
+    "type": "CFD",
+    "maximum_leverage": 20,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 2,
+    "market_hours": {
+      "timezone": "Europe/Vienna",
+      "open": "Monday 09:00:00",
+      "close": "Friday 17:30:00",
+      "daily_break_start": "17:30:00",
+      "daily_break_stop": "09:00:00"
+    }
   }
 }

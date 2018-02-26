@@ -45,7 +45,7 @@ get_symbols().then ( symbols ) ->
 
       if error
 
-        console.error 'error fetching details'
+        console.error 'error fetching details for', symbol
         console.error error
 
         return
