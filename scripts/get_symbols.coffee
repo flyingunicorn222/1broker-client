@@ -6,26 +6,38 @@ Client = require '../src/client'
 
 one_broker = new Client key
 
-module.exports = P.promisify ( done ) ->
+module.exports = ->
 
-  #console.time 'fetching 1broker markets'
+  console.time 'fetching 1broker markets'
 
-  one_broker.market.categories ( error, response ) ->
+  # we will return a map of symbols
+  symbols     = {}
+  all_symbols = [] # list with all symbols
 
-    if error then return done 'error fetchin markets'
+  # get categories
+  get_categories = P.promisify one_broker.market.categories
 
-    markets = response.response
+  response = await get_categories()
 
-    get_symbols = P.promisify one_broker.market.list
+  categories = response.response
 
-    list = for market in markets
+  # get symbols for each category
+  list_markets = P.promisify one_broker.market.list
 
-      get_symbols category: market
+  for category in categories
 
-    P.map list, ( response ) -> _.map response.response, (i) -> i.symbol
-    .then  ( markets ) ->
-      #console.timeEnd 'fetching 1broker markets'
-      done null, _.flatten markets
-    .catch ( error )   ->
-      #console.timeEnd 'fetching 1broker markets'
-      done error
+    response = await list_markets { category }
+
+    category = category.toLowerCase()
+
+    symbols[ category ] = []
+
+    for market in response.response
+
+      symbols[ category ].push market.symbol
+
+      all_symbols.push market.symbol
+
+  symbols.all = all_symbols
+
+  return symbols

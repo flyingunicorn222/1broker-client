@@ -6,16 +6,57 @@
 
 fs     = require 'fs'
 key    = require '../_key'
+P      = require 'bluebird'
 Client = require '../src/client'
 
 get_symbols = require './get_symbols'
 
-client = new Client key
+fetch_details = ->
 
-get_symbols().then ( symbols ) ->
+  client = new Client key
 
-  console.log 'got symbols!', symbols
+  details = {}
 
+  console.log "Getting list of symbols"
+
+  symbols = await get_symbols()
+
+  get_details = P.promisify client.market.details
+
+  # get a copy of all symbols
+  all_symbols = [].concat symbols.all
+
+  for symbol in all_symbols
+
+    console.log "Fetching #{symbol} details"
+
+    response = await get_details { symbol }
+
+    d = response.response
+
+    d.maximum_leverage               = Number d.maximum_leverage
+    d.maximum_amount                 = Number d.maximum_amount
+    d.overnight_charge_long_percent  = Number d.overnight_charge_long_percent
+    d.overnight_charge_short_percent = Number d.overnight_charge_short_percent
+    d.decimals                       = Number d.decimals
+
+    details[ symbol ] = d
+
+  details = JSON.stringify details, null, 2
+
+  path = __dirname + "/../src/info/details.json"
+
+  fs.writeFileSync path, details
+
+  symbols = JSON.stringify symbols, null, 2
+
+  path = __dirname + "/../src/info/symbols.json"
+
+  fs.writeFileSync path, symbols
+
+do fetch_details
+
+###
   details = {}
 
   end = ->
@@ -62,3 +103,4 @@ get_symbols().then ( symbols ) ->
       next()
 
   next()
+###
