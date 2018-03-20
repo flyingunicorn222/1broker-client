@@ -16,7 +16,7 @@ clean:
 
 build:
 	rm -rf ./lib
-	./node_modules/.bin/coffee --bare -o lib/ -c src/
+	./node_modules/.bin/coffee -t --bare -o lib/ -c src/
 	./node_modules/.bin/coffee scripts/fetch_details.coffee
 	mkdir ./lib/info
 	cp src/info/details.json lib/info/details.json
