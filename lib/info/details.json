@@ -62,7 +62,7 @@
     "description": "The DAX is a blue chip stock market index consisting of the 30 major German companies trading on the Frankfurt Stock Exchange. The Base date for the DAX is 30 December 1987 and it was started from a base value of 1,000. The Xetra system calculates the index after every 1 second since January 1, 2006.",
     "category": "INDEX",
     "type": "CFD",
-    "maximum_leverage": 20,
+    "maximum_leverage": 50,
     "maximum_amount": 500,
     "overnight_charge_long_percent": 0.02,
     "overnight_charge_short_percent": 0.0077,
@@ -81,7 +81,7 @@
     "description": "The Dow Jones Industrial Average is a stock market index. It shows how 30 large, publicly owned companies based in the United States have traded during a standard trading session in the stock market.",
     "category": "INDEX",
     "type": "CFD",
-    "maximum_leverage": 20,
+    "maximum_leverage": 50,
     "maximum_amount": 500,
     "overnight_charge_long_percent": 0.02,
     "overnight_charge_short_percent": 0.0077,
@@ -493,6 +493,25 @@
       "daily_break_stop": "09:00:00"
     }
   },
+  "DBX": {
+    "symbol": "DBX",
+    "name": "Dropbox Inc.",
+    "description": "Dropbox, Inc., headquartered in San Francisco, California, offers cloud storage, file synchronization, personal cloud, and client software. Dropbox was founded in 2007, by MIT students Drew Houston and Arash Ferdowsi, as a startup company, with initial funding from seed accelerator Y Combinator.",
+    "category": "STOCK",
+    "type": "CFD",
+    "maximum_leverage": 15,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
   "DIS": {
     "symbol": "DIS",
     "name": "The Walt Disney Company",
@@ -746,6 +765,25 @@
     "description": "Snap Inc. is an American multinational technology and social media company, founded on September 16, 2011 by Evan Spiegel and Bobby Murphy and based in Venice, Los Angeles. Its products include Snapchat and Spectacles, as well as the Bitmoji app.",
     "category": "STOCK",
     "type": "STOCK",
+    "maximum_leverage": 15,
+    "maximum_amount": 500,
+    "overnight_charge_long_percent": 0.02,
+    "overnight_charge_short_percent": 0.0077,
+    "decimals": 3,
+    "market_hours": {
+      "timezone": "America/New_York",
+      "open": "Monday 09:30:00",
+      "close": "Friday 16:00:00",
+      "daily_break_start": "16:00:00",
+      "daily_break_stop": "09:30:00"
+    }
+  },
+  "SPOT": {
+    "symbol": "SPOT",
+    "name": "Spotify Technology S.A.",
+    "description": "Spotify is a music, podcast, and video streaming service launched on 7th October 2008. It is developed by Spotify AB in Stockholm, Sweden. It provides DRM-protected content from record labels and media companies. Spotify is a freemium service; basic features are free with advertisements or limitations, while additional features are offered via paid subscriptions.",
+    "category": "STOCK",
+    "type": "CFD",
     "maximum_leverage": 15,
     "maximum_amount": 500,
     "overnight_charge_long_percent": 0.02,
